@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nominas>
+	<grupos>
+		<grupo numerogrupo="1">
+			
+			<niveles>
+				<nivel numeronivel="1">
+					<categoria>Titulado Superior</categoria>
+					<salario>25.344,61</salario>
+				</nivel>
+				
+				<nivel numeronivel="2">
+					<categoria>Titulado Superior</categoria>
+					<salario>20.275,83</salario>
+				</nivel>
+				
+				<nivel numeronivel="3">
+					<categoria>Titulado Superior</categoria>
+					<salario>17.741,35</salario>
+				</nivel>
+				
+			</niveles>
+		</grupo>
+		
+		<grupo numerogrupo="2">
+			
+			<niveles>
+				<nivel numeronivel="1">
+					<categoria>Titulo Medio</categoria>
+					<salario>22.663,38</salario>
+				</nivel>
+				
+				<nivel numeronivel="2">
+					<categoria>Titulo Medio</categoria>
+					<salario>18.131,44</salario>
+				</nivel>
+				
+				<nivel numeronivel="3">
+					<categoria>Titulo Medio</categoria>
+					<salario>15.864,27</salario>
+				</nivel>
+			
+			
+			</niveles>
+		</grupo>
+		
+		<grupo numerogrupo="3">
+		
+			<niveles>
+				<nivel numeronivel="1">
+					<subnivel letra="a">
+						<categoria>Jefe Administración Superior, Jefe Delineación</categoria>
+						<salario>22.664,11</salario>
+					</subnivel>
+					
+					<subnivel letra="b">
+						<categoria>Jefe Administración Superior, Jefe Delineación</categoria>
+						<salario>22.433,86</salario>
+					</subnivel>
+				</nivel>
+				
+				<nivel numeronivel="2">
+					<categoria>Encargado laboratorio, Jefe de Primera Administrativo , Jefe equipo informática, Analista de informática, programador o técnico de sistemas y comunicaciones</categoria>
+					<salario>19.885,40</salario>
+				</nivel>
+				
+				<nivel numeronivel="3">
+					<subnivel letra="a">
+						<categoria>Delineante de primera</categoria>
+						<salario>19.366,96</salario>
+					</subnivel>
+					
+					<subnivel letra="b">
+						<categoria>Delineante de seguna</categoria>
+						<salario>18.367,96</salario>
+					</subnivel>
+				</nivel>
+			</niveles>
+		
+		</grupo>
+		
+		<grupo numerogrupo="4">
+			
+			<niveles>
+				<nivel numeronivel="1">
+					<categoria>Jefe Administrativo de Segunda, Cajero con firma, programador maquinas auxiliares, administrador de test, coordinador tratamientos cuestionarios, jefe explotación, interpretes jurados, secretarias/os de Dirección </categoria>
+					<salario>18.033,67</salario>
+				</nivel>
+				
+				<nivel numeronivel="2">
+					<subnivel letra="a">
+						<categoria>Técnico analista, analista de primera</categoria>
+						<salario>17.736,28</salario>
+					</subnivel>
+					
+					<subnivel letra="b">
+						<categoria>Analista de segunda</categoria>
+						<salario>17.070,36</salario>
+					</subnivel>
+					
+					<subnivel letra="c">
+						<categoria>Inspector entrevistador, encargado, operador tabuladores</categoria>
+						<salario>16.806,16</salario>
+					</subnivel>
+				</nivel>
+			
+			</niveles>
+		
+		</grupo>
+		
+		<grupo numerogrupo="5">
+			<niveles>
+				<nivel numeronivel="1">
+					<categoria>Oficial de primera, taquígrafo, cajero sin firma, coordinador de estudios, responsable equipo encuestas, operador ordenadores 1ª, jefe de maquinas básicas, clasificador, responsable central teleoperadores </categoria>
+					<salario>16.571,72</salario>
+				</nivel>
+				
+				<nivel numeronivel="2">
+					<subnivel letra="a">
+						<categoria>Oficial de primera en laboratorio</categoria>
+						<salario>16.371,43</salario>
+					</subnivel>
+					
+					<subnivel letra="b">
+						<categoria>Oficial de seguna laboratorio</categoria>
+						<salario>15.786,05</salario>
+					</subnivel>
+					
+				</nivel>
+				
+				<nivel numeronivel="3">
+					<categoria>Capataz</categoria>
+					<salario>15.693,91</salario>
+				</nivel>
+				
+				<nivel numeronivel="4">
+					<categoria>Oficial de segunda , perforista verificador, ; mecánicos/as; carpinteros/as; electricistas; lector/a de contadores</categoria>
+					<salario>15.596,47</salario>
+				</nivel>
+			</niveles>
+		
+		</grupo>
+		
+		<grupo numerogrupo="6">
+			<niveles>
+				<nivel numeronivel="1">
+					<categoria>Operador de máquinas básicas, dibujante, entrevistador/encuestador; Oficial de oficios de primera, conductor, jardinero</categoria>
+					<salario>14.621,72</salario>
+				</nivel>
+				
+				<nivel numeronivel="2">
+					<categoria>Calcador, Conserje Mayor, Conserje ordenanza- Vigilante de noche, oficial oficios de segunda </categoria>
+					<salario>13.939,63</salario>
+				</nivel>
+			</niveles>
+		</grupo>
+		<grupo numerogrupo="7">
+			<niveles>
+				<nivel numeronivel="1">
+					<categoria>Auxiliar Administrativo más de 3 años, Teleoperadores mas de 3 años </categoria>
+					<salario>13.500,00</salario>
+				</nivel>
+				
+				<nivel numeronivel="2">
+					<categoria>Auxiliar administrativo de entrada, perforista de segunda; auxiliar de laboratorio; Ayudante operador, cobrador-pagador; auxiliar de caja, operador reproducción multicop, Peón, mozo, personal de limpieza, personal de oficios básicos, conserje ordenanza portero día; costurera oficial, botones, bedeles, teleoperadores</categoria>
+					<salario>13.300,00</salario>
+				</nivel>
+			</niveles>
+		</grupo>
+	</grupos>
+	
+	<pluses>
+		<plus>
+			<nombre>Ayuda especial</nombre>
+			<cantidad>122</cantidad>
+		</plus>
+		
+		<plus>
+			<nombre>Plus de transporte</nombre>
+			<cantidad>2,54</cantidad>
+		</plus>
+		
+		<plus>
+			<nombre>Plus de teletrabajo</nombre>
+			<cantidad>2,54</cantidad>
+		</plus>
+		
+		<plus>
+			<nombre>Dieta media</nombre>
+			<cantidad>19,58</cantidad>
+		</plus>
+		
+		<plus>
+			<nombre>Dieta completa</nombre>
+			<cantidad>57,61</cantidad>
+		</plus>
+	</pluses>
+	
+	<tipos_contrato>
+		<modalidades>
+			<modalidad nombre="Formativos">
+				<tipo>Contrato de formación en alternancia</tipo>
+				<tipo>Contrato para la obtención de la práctica profesional</tipo>
+			</modalidad>
+			<modalidad nombre="Temporales">
+				<tipo>Circunstancias de la producción</tipo>
+				<tipo>Sustitución de una persona trabajadora</tipo>
+				<tipo>Encadenamiento de contratos temporales</tipo>
+			</modalidad>
+			<modalidad nombre="A tiempo parcial">
+				<tipo>Contrato a tiempo parcial común</tipo>
+				<tipo>Contrato de relevo y de jubilación parcial</tipo>
+				<tipo>Contrato fijo-discontinuo</tipo>
+			</modalidad>
+			<modalidad nombre="Indefinidos">
+				<tipo>Contrato indefinido ordinario</tipo>
+				<tipo>Contrataciones indefinidas bonificadas</tipo>
+			</modalidad>
+		</modalidades>
+	</tipos_contrato>
+
+
+</nominas>
