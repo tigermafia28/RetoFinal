@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nominas>
 	<convenios>
-		<convenio fecha="2022">
+		<convenio nombre="CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE." fecha="2022">
 			
 			<grupos>
 
@@ -53,18 +53,18 @@
 					<niveles>
 						<nivel numeronivel="1">
 							<subnivel letra="a">
-								<categoria>Jefe Administración Superior, Jefe Delineación</categoria>
+								<categoria>Jefe Administracion Superior, Jefe Delineacion</categoria>
 								<salario>23117.39</salario>
 							</subnivel>
 							
 							<subnivel letra="b">
-								<categoria>Jefe Administración Superior, Jefe Delineación</categoria>
+								<categoria>Jefe Administracion Superior, Jefe Delineacion</categoria>
 								<salario>22882.54</salario>
 							</subnivel>
 						</nivel>
 						
 						<nivel numeronivel="2">
-							<categoria>Encargado laboratorio, Jefe de Primera Administrativo , Jefe equipo informática, Analista de informática, programador o técnico de sistemas y comunicaciones</categoria>
+							<categoria>Encargado laboratorio, Jefe de Primera Administrativo , Jefe equipo informatica, Analista de informatica, programador o tecnico de sistemas y comunicaciones</categoria>
 							<salario>20283.11</salario>
 						</nivel>
 						
@@ -87,13 +87,13 @@
 					
 					<niveles>
 						<nivel numeronivel="1">
-							<categoria>Jefe Administrativo de Segunda, Cajero con firma, programador maquinas auxiliares, administrador de test, coordinador tratamientos cuestionarios, jefe explotación, interpretes jurados, secretarias/os de Dirección </categoria>
+							<categoria>Jefe Administrativo de Segunda, Cajero con firma, programador maquinas auxiliares, administrador de test, coordinador tratamientos cuestionarios, jefe explotacion, interpretes jurados, secretarias/os de Direccion </categoria>
 							<salario>18394.34</salario>
 						</nivel>
 						
 						<nivel numeronivel="2">
 							<subnivel letra="a">
-								<categoria>Técnico analista, analista de primera</categoria>
+								<categoria>Tecnico analista, analista de primera</categoria>
 								<salario>18091.01</salario>
 							</subnivel>
 							
@@ -115,7 +115,7 @@
 				<grupo numerogrupo="5">
 					<niveles>
 						<nivel numeronivel="1">
-							<categoria>Oficial de primera, taquígrafo, cajero sin firma, coordinador de estudios, responsable equipo encuestas, operador ordenadores 1ª, jefe de maquinas básicas, clasificador, responsable central teleoperadores </categoria>
+							<categoria>Oficial de primera, taquigrafo, cajero sin firma, coordinador de estudios, responsable equipo encuestas, operador ordenadores primera, jefe de maquinas basicas, clasificador, responsable central teleoperadores </categoria>
 							<salario>16903.15</salario>
 						</nivel>
 						
@@ -138,7 +138,7 @@
 						</nivel>
 						
 						<nivel numeronivel="4">
-							<categoria>Oficial de segunda , perforista verificador, ; mecánicos/as; carpinteros/as; electricistas; lector/a de contadores</categoria>
+							<categoria>Oficial de segunda , perforista verificador, ; mecanicos/as; carpinteros/as; electricistas; lector/a de contadores</categoria>
 							<salario>15908.40</salario>
 						</nivel>
 					</niveles>
@@ -148,7 +148,7 @@
 				<grupo numerogrupo="6">
 					<niveles>
 						<nivel numeronivel="1">
-							<categoria>Operador de máquinas básicas, dibujante, entrevistador/encuestador; Oficial de oficios de primera, conductor, jardinero</categoria>
+							<categoria>Operador de maquinas basicas, dibujante, entrevistador/encuestador; Oficial de oficios de primera, conductor, jardinero</categoria>
 							<salario>14914.15</salario>
 						</nivel>
 						
@@ -161,12 +161,12 @@
 				<grupo numerogrupo="7">
 					<niveles>
 						<nivel numeronivel="1">
-							<categoria>Auxiliar Administrativo más de 3 años, Teleoperadores mas de 3 años </categoria>
+							<categoria>Auxiliar Administrativo mas de 3 años, Teleoperadores mas de 3 años </categoria>
 							<salario>13770.00</salario>
 						</nivel>
 						
 						<nivel numeronivel="2">
-							<categoria>Auxiliar administrativo de entrada, perforista de segunda; auxiliar de laboratorio; Ayudante operador, cobrador-pagador; auxiliar de caja, operador reproducción multicop, Peón, mozo, personal de limpieza, personal de oficios básicos, conserje ordenanza portero día; costurera oficial, botones, bedeles, teleoperadores</categoria>
+							<categoria>Auxiliar administrativo de entrada, perforista de segunda; auxiliar de laboratorio; Ayudante operador, cobrador-pagador; auxiliar de caja, operador reproducción multicop, Peón, mozo, personal de limpieza, personal de oficios basicos, conserje ordenanza portero día; costurera oficial, botones, bedeles, teleoperadores</categoria>
 							<salario>13566.00</salario>
 						</nivel>
 					</niveles>
@@ -201,7 +201,8 @@
 			</pluses>
 		</convenio>
 		
-		<convenio fecha="2023">
+		
+		<convenio nombre="CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE." fecha="2023">
 		<grupos>
 
 				<grupo numerogrupo="1">
@@ -252,18 +253,18 @@
 					<niveles>
 						<nivel numeronivel="1">
 							<subnivel letra="a">
-								<categoria>Jefe Administración Superior, Jefe Delineación</categoria>
+								<categoria>Jefe Administracion Superior, Jefe Delineacion</categoria>
 								<salario>23579.74</salario>
 							</subnivel>
 							
 							<subnivel letra="b">
-								<categoria>Jefe Administración Superior, Jefe Delineación</categoria>
+								<categoria>Jefe Administracion Superior, Jefe Delineacion</categoria>
 								<salario>23340.19</salario>
 							</subnivel>
 						</nivel>
 						
 						<nivel numeronivel="2">
-							<categoria>Encargado laboratorio, Jefe de Primera Administrativo , Jefe equipo informática, Analista de informática, programador o técnico de sistemas y comunicaciones</categoria>
+							<categoria>Encargado laboratorio, Jefe de Primera Administrativo , Jefe equipo informatica, Analista de informatica, programador o tecnico de sistemas y comunicaciones</categoria>
 							<salario>20688.77</salario>
 						</nivel>
 						
@@ -286,13 +287,13 @@
 					
 					<niveles>
 						<nivel numeronivel="1">
-							<categoria>Jefe Administrativo de Segunda, Cajero con firma, programador maquinas auxiliares, administrador de test, coordinador tratamientos cuestionarios, jefe explotación, interpretes jurados, secretarias/os de Dirección </categoria>
+							<categoria>Jefe Administrativo de Segunda, Cajero con firma, programador maquinas auxiliares, administrador de test, coordinador tratamientos cuestionarios, jefe explotacion, interpretes jurados, secretarias/os de Direccion </categoria>
 							<salario>18762.23</salario>
 						</nivel>
 						
 						<nivel numeronivel="2">
 							<subnivel letra="a">
-								<categoria>Técnico analista, analista de primera</categoria>
+								<categoria>Tecnico analista, analista de primera</categoria>
 								<salario>18452.83</salario>
 							</subnivel>
 							
@@ -314,7 +315,7 @@
 				<grupo numerogrupo="5">
 					<niveles>
 						<nivel numeronivel="1">
-							<categoria>Oficial de primera, taquígrafo, cajero sin firma, coordinador de estudios, responsable equipo encuestas, operador ordenadores 1ª, jefe de maquinas básicas, clasificador, responsable central teleoperadores </categoria>
+							<categoria>Oficial de primera, taquigrafo, cajero sin firma, coordinador de estudios, responsable equipo encuestas, operador ordenadores primera, jefe de maquinas basicas, clasificador, responsable central teleoperadores </categoria>
 							<salario>17241.22</salario>
 						</nivel>
 						
@@ -337,7 +338,7 @@
 						</nivel>
 						
 						<nivel numeronivel="4">
-							<categoria>Oficial de segunda , perforista verificador, ; mecánicos/as; carpinteros/as; electricistas; lector/a de contadores</categoria>
+							<categoria>Oficial de segunda , perforista verificador, ; mecanicos/as; carpinteros/as; electricistas; lector/a de contadores</categoria>
 							<salario>16226.57</salario>
 						</nivel>
 					</niveles>
@@ -347,7 +348,7 @@
 				<grupo numerogrupo="6">
 					<niveles>
 						<nivel numeronivel="1">
-							<categoria>Operador de máquinas básicas, dibujante, entrevistador/encuestador; Oficial de oficios de primera, conductor, jardinero</categoria>
+							<categoria>Operador de maquinas basicas, dibujante, entrevistador/encuestador; Oficial de oficios de primera, conductor, jardinero</categoria>
 							<salario>15212.44</salario>
 						</nivel>
 						
@@ -360,12 +361,12 @@
 				<grupo numerogrupo="7">
 					<niveles>
 						<nivel numeronivel="1">
-							<categoria>Auxiliar Administrativo más de 3 años, Teleoperadores mas de 3 años </categoria>
+							<categoria>Auxiliar Administrativo mas de 3 años, Teleoperadores mas de 3 años </categoria>
 							<salario>14045.40</salario>
 						</nivel>
 						
 						<nivel numeronivel="2">
-							<categoria>Auxiliar administrativo de entrada, perforista de segunda; auxiliar de laboratorio; Ayudante operador, cobrador-pagador; auxiliar de caja, operador reproducción multicop, Peón, mozo, personal de limpieza, personal de oficios básicos, conserje ordenanza portero día; costurera oficial, botones, bedeles, teleoperadores</categoria>
+							<categoria>Auxiliar administrativo de entrada, perforista de segunda; auxiliar de laboratorio; Ayudante operador, cobrador-pagador; auxiliar de caja, operador reproduccion multicop, Peon, mozo, personal de limpieza, personal de oficios basicos, conserje ordenanza portero dia; costurera oficial, botones, bedeles, teleoperadores</categoria>
 							<salario>13837.32</salario>
 						</nivel>
 					</niveles>
@@ -400,22 +401,173 @@
 			</pluses>
 		
 		</convenio>
+		
+		
+				<convenio nombre="CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL." fecha="2022">
+		<grupos>
+
+				<grupo numerogrupo="1">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Ingenieros Arquitectos y Licen. ;Analistas de Sistemas</categoria>
+							<salario>27493.06</salario>
+							<PCI>5.57</PCI>
+						</nivel>
+					</niveles>
+				</grupo>
+				
+				<grupo numerogrupo="2">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>ATS;Peritos,Ing.Tec y Apareja;Diplomados Universitarios;Titulados Superiores de Entrada;Graduados Sociales</categoria>
+							<salario>25516.68</salario>
+							<PCI>5.57</PCI>
+						</nivel>
+						
+					</niveles>
+				</grupo>
+				
+				<grupo numerogrupo="3">
+				
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Jefe de Organizacion de primera;Delineante proyectista y dibujante</categoria>
+							<salario>20726.86</salario>
+							<PCI>5.82</PCI>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Jefe de primera Administrativo</categoria>
+							<salario>21330.12</salario>
+							<PCI>5.82</PCI>
+						</nivel>
+						
+						<nivel numeronivel="3">
+							<categoria>Jefe de Taller;Jefe de Laboratorio</categoria>
+							<salario>22144.78</salario>
+							<PCI>5.82</PCI>
+						</nivel>
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="4">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Jefe de Organizacion de Segunda;Jefe de Seccion;Programador de ordenador</categoria>
+							<salario>19767.44</salario>
+							<PCI>5.82</PCI>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Jefe de segunda administrativo</categoria>
+							<salario>19750.36</salario>
+							<PCI>5.82</PCI>
+						</nivel>
+						<nivel numeronivel="3">
+							<categoria>Encargado;Maestro de taller;Contramaestre</categoria>
+							<salario>19298.83</salario>
+							<PCI>5.64</PCI>
+						</nivel>
+					
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="5">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Oficina de primera administrativo;Tecnico de organizacion de primera;Delineante de primera;Analista de primera;Practico de topografia;Viajante;Fotografo;Archivador de biblioteca;Conductor mecanico C1,C2,D,E;Delineante de segunda;Tecnico de organizacion de segunda;Oficial de segunda administrativo </categoria>
+							<salario>17645.74</salario>
+							<PCI>6.02</PCI>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Oficial de primera;Oficial de segunda</categoria>
+							<salario>16896.6</salario>
+							<PCI>6.02</PCI>
+						</nivel>
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="6">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Conductor;Auxiliar administrativo;Auxiliar de organizacion;Conserje;Analista de segunda;Listero;Dependiente de economato;Telefonista;Auxiliar de oficina;Auxiliar de laboratorio;Pesador basculero;Almacenero</categoria>
+							<salario>16371.46</salario>
+							<PCI>5.98</PCI>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Oficial de tercera;Especialista;Capataz </categoria>
+							<salario>16132.2</salario>
+							<PCI>5.84</PCI>
+						</nivel>
+					</niveles>
+				</grupo>
+				<grupo numerogrupo="7">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Vigilante;Portero;Ordenanza</categoria>
+							<salario>15817.62</salario>
+							<PCI>5.84</PCI> 
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Peon</categoria>
+							<salario>15703.8</salario>
+							<PCI>5.77</PCI>
+						</nivel>
+					</niveles>
+				</grupo>
+				<grupo numerogrupo="8">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Formacion primer año</categoria>
+							<salario>20619.76</salario>
+							<PCI>4.18</PCI>
+						</nivel>
+
+						<nivel numeronivel="2">
+							<categoria>Formacion segundo y tercer año</categoria>
+							<salario>21994.42</salario>
+							<PCI>4.46</PCI>
+						</nivel>
+
+					</niveles>
+
+				</grupo>
+			</grupos>
+			
+			<pluses>
+				
+				<plus>
+					<nombre>Plus de transporte</nombre>
+					<cantidad>0.38</cantidad>
+				</plus>
+			</pluses>
+		
+		</convenio>
 	</convenios>
 			
 			<tipos_contrato>
 				<modalidades>
 					<modalidad nombre="Formativos">
-						<tipo>Contrato de formación en alternancia</tipo>
-						<tipo>Contrato para la obtención de la práctica profesional</tipo>
+						<tipo>Contrato de formacion en alternancia</tipo>
+						<tipo>Contrato para la obtencion de la practica profesional</tipo>
 					</modalidad>
 					<modalidad nombre="Temporales">
-						<tipo>Circunstancias de la producción</tipo>
-						<tipo>Sustitución de una persona trabajadora</tipo>
+						<tipo>Circunstancias de la produccion</tipo>
+						<tipo>Sustitucion de una persona trabajadora</tipo>
 						<tipo>Encadenamiento de contratos temporales</tipo>
 					</modalidad>
 					<modalidad nombre="A tiempo parcial">
-						<tipo>Contrato a tiempo parcial común</tipo>
-						<tipo>Contrato de relevo y de jubilación parcial</tipo>
+						<tipo>Contrato a tiempo parcial comun</tipo>
+						<tipo>Contrato de relevo y de jubilacion parcial</tipo>
 						<tipo>Contrato fijo-discontinuo</tipo>
 					</modalidad>
 					<modalidad nombre="Indefinidos">
