@@ -6,4 +6,4 @@ ENV MARIADB_DATABASE=noticias
 ENV MARIADB_USER=usuario
 ENV MARIADB_PASSWORD=usuario
 
-COPY noticias.sql /docker-entrypoint-initdb.d
+COPY nominas.sql /docker-entrypoint-initdb.d
