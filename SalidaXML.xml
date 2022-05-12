@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nomina>
+    <empresa>
+        <nombre></nombre>
+        <cif></cif>
+        <ccc></ccc>
+        <direccion></direccion>
+    </empresa>
+    <trabajador>
+        <nombre></nombre>
+        <nif></nif>
+        <nafss></nafss>
+        <grupo_cotizacion></grupo_cotizacion>
+        <categoria_profesional></categoria_profesional>
+    </trabajador>
+    <devengos>
+        <salario_base></salario_base>
+        <complementos></complementos>
+        <horas_extras></horas_extras>
+        <salario_especie></salario_especie>
+        <total></total>
+    </devengos>
+    <deduciones>
+        <aportaciones>
+            <contingencias_comunes></contingencias_comunes>
+            <desempleo></desempleo>
+            <formacion_profesional></formacion_profesional>
+            <horas_extra></horas_extra>
+            <total></total>
+        </aportaciones>
+        <impuesto_renta></impuesto_renta>
+        <total></total>
+    </deduciones>
+    <neto></neto>
+</nomina>
