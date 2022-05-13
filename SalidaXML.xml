@@ -14,14 +14,21 @@
         <grupo_cotizacion></grupo_cotizacion>
         <categoria_profesional></categoria_profesional>
     </trabajador>
+    <periodo_liquidacion>
+        <dia_inicio></dia_inicio>
+        <dia_final></dia_final>
+        <total></total>
+    </periodo_liquidacion>
     <devengos>
         <salario_base></salario_base>
         <complementos></complementos>
         <horas_extras></horas_extras>
+        <gratificaciones_extraordinarias></gratificaciones_extraordinarias>
         <salario_especie></salario_especie>
+        <indemnizaciones_o_suplidos></indemnizaciones_o_suplidos>
         <total></total>
     </devengos>
-    <deduciones>
+    <deducciones>
         <aportaciones>
             <contingencias_comunes></contingencias_comunes>
             <desempleo></desempleo>
@@ -29,8 +36,48 @@
             <horas_extra></horas_extra>
             <total></total>
         </aportaciones>
-        <impuesto_renta></impuesto_renta>
+        <irpf></irpf>
         <total></total>
-    </deduciones>
+    </deducciones>
     <neto></neto>
+
+    <seguridad_social>
+        <contingencias_comunes>
+            <remuneracion_mensual></remuneracion_mensual>
+            <prorrata></prorrata>
+            <total></total>
+        </contingencias_comunes>
+        <contingencias_profesionales>
+            <at_ep></at_ep>
+            <desempleo></desempleo>
+            <fp></fp>
+            <fogasa></fogasa>
+        </contingencias_profesionales>
+        <horas_extra></horas_extra>
+    </seguridad_social>
+
+    <bases>
+        <bccc></bccc>
+        <bccp></bccp>
+        <bhe></bhe>
+    </bases>
+
+    <tipos>
+        <trabajador>
+            <contingencis_comunes></contingencis_comunes>
+            <desempleo></desempleo>
+            <fp></fp>
+            <horas_extra></horas_extra>
+            <irpf></irpf>
+        </trabajador>
+
+        <empesa>
+            <contingencias_comunes></contingencias_comunes>
+            <at_ep></at_ep>
+            <desempleo></desempleo>
+            <fp></fp>
+            <fogasa></fogasa>
+            <horas_extra></horas_extra>
+        </empesa>
+    </tipos>
 </nomina>
