@@ -78,3 +78,24 @@ CREATE TABLE horas(
 	CONSTRAINT fk_emp_hor FOREIGN KEY(CodEmp)
 	REFERENCES empresa(CodEmp) ON UPDATE CASCADE
 );
+
+INSERT INTO trabajador(NomTra,NifTra,NafSSTra)
+VALUES ('Felipe Perez Garcia','89652418M','569842314578'),
+('Alejandro Ubeda Miralles','54216874B','754236548745'),
+('Angel Riquelme Armando','65247856L','584231789654'),
+('Maria Garcia Hernández','78056945L','632159754642'),
+('Elena Pascual Ramon','95378435D','842679134975'),
+('Pedro Benito Gil','88560248H','002549678542'),
+('Paula Gomez Garcia','77804562L','234512567216'),
+('Javier Berenguer Manzanera','60315950M','800235478951'),
+('Jennifer Leal Blanc','54655802A','220354786542'),
+('Ferran Villa Capdevila','96542302N','5842008764231'),
+('Marina Torres Gil','69366501L','500478635665');
+
+
+INSERT INTO empresa(NomEmp,CifEmp,DirEmp,CCCEmp)
+VALUES ('CocaCola','H85423645','Calle Severo Ochoa','01521486315'),
+('Iberdrola','G52348756','Calle Santa Barbara','523157801453'),
+('Nestle','M32184623','Calle Azorin','642148953412'),
+('Colacao','H24568713','Calle Ramon y Cajal','843897452536');
+
