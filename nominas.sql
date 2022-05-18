@@ -90,12 +90,31 @@ VALUES ('Felipe Perez Garcia','89652418M','569842314578'),
 ('Javier Berenguer Manzanera','60315950M','800235478951'),
 ('Jennifer Leal Blanc','54655802A','220354786542'),
 ('Ferran Villa Capdevila','96542302N','5842008764231'),
-('Marina Torres Gil','69366501L','500478635665');
+('Marina Torres Gil','69366501L','500478635665'),
+('Gervasio Ubeda Guil','52687412K','854268741256'),
+('Evaristo Garrote Fino','54345871G','658741259874'),
+('Juan Carlos Borbon','75982564R','794613258465'),
+('Luz Cuesta Mogollon','46971325H','974652307419'),
+('Fermin Galarga Gutierrez','46825719U','016257419852'),
+('Florentino Perez Rodriguez','82974630D','066574108997'),
+('Andres Iniesta Lujan','45682175L','774586302125'),
+('Isabel Diaz Ayuso','74196582P','827364098126'),
+('Juan Cuesta Presidente','98723498U','997465801452'),
+('Josep Guardiola Sala','92736512E','987346238761'),
+('Cristiano Ronaldo Siu','82574690P','876234058107'),
+('Iker Jimenez Ruiz','24574598D','874596325741'),
+('Kiko Rivera Pantoja','23487462M','745821698201'),
+('Benita Torres Fuertes','485216074P','745290354127');
 
 
 INSERT INTO empresa(NomEmp,CifEmp,DirEmp,CCCEmp)
 VALUES ('CocaCola','H85423645','Calle Severo Ochoa','01521486315'),
 ('Iberdrola','G52348756','Calle Santa Barbara','523157801453'),
 ('Nestle','M32184623','Calle Azorin','642148953412'),
-('Colacao','H24568713','Calle Ramon y Cajal','843897452536');
-
+('Colacao','H24568713','Calle Ramon y Cajal','843897452536'),
+('Microsoft','M74825698','Calle del Valle','458126874521'),
+('Chupachups','J78541268','Calle Falsa','873092834098'),
+('Tarradellas','P83765412','Calle Espetec','752148963574'),
+('Rumasa','G74582359','Calle Abeja','746982145982'),
+('Mercadona','E98734021','Calle Hacendado','472016980310'),
+('Brugal','H934023459','Calle Concola','128745963257');
