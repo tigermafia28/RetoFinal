@@ -20,7 +20,7 @@ CREATE TABLE empresa(
 	CCCEmp VARCHAR(11) NOT NULL UNIQUE
 );
 
-CREATE TABLE traemp(
+CREATE TABLE trabaja(
 	CodTra INT(11),
 	CodEmp INT(11),
 	Convenio VARCHAR(100),
@@ -34,3 +34,47 @@ CREATE TABLE traemp(
 	CONSTRAINT fk_emp_traemp FOREIGN KEY(CodEmp)
 	REFERENCES empresa(CodEmp) ON UPDATE CASCADE
 );	
+
+CREATE TABLE nomina(
+	CodNom INT(11) AUTO_INCREMENT,
+	CodTra INT(11),
+	SalBase DECIMAL(10,2) NOT NULL,
+	Prorrata DECIMAL(10,2),
+	AyudaEsp DECIMAL(10,2),
+	PlusTrans DECIMAL(10,2),
+	PlusTele DECIMAL(10,2),
+	DietaMed DECIMAL(10,2),
+	DietaComp DECIMAL(10,2),
+	TotalDev DECIMAL(10,2),
+	ContCom DECIMAL(10,2),
+	Desempleo DECIMAL(10,2),
+	FP DECIMAL(10,2),
+	HorasExtraFM DECIMAL(10,2),
+	OtrasHoras DECIMAL(10,2),
+	TotalApor DECIMAL(10,2),
+	IRPF DECIMAL(10,2),
+	Anticipo DECIMAL(10,2),
+	ValorEspecie DECIMAL(10,2),
+	OtrasDed DECIMAL(10,2),
+	TotalDed DECIMAL(10,2),
+	Neto DECIMAL(10,2),
+	BCCC DECIMAL(10,2),
+	BCCP DECIMAL(10,2),
+	BHE DECIMAL(10,2),
+	BHEFM DECIMAL(10,2),
+	PRIMARY KEY(CodNom,CodTra),
+	CONSTRAINT fk_tra_nom FOREIGN KEY(CodTra)
+	REFERENCES trabajador(CodTra) ON UPDATE CASCADE
+);
+
+CREATE TABLE horas(
+	CodTra INT(11),
+	CodEmp INT(11),
+	MesAnyo VARCHAR(7),
+	N_Horas INT(3),
+	PRIMARY KEY(CodTra,CodEmp,MesAnyo),
+	CONSTRAINT fk_tra_hor FOREIGN KEY(CodTra)
+	REFERENCES trabajador(CodTra) ON UPDATE CASCADE,
+	CONSTRAINT fk_emp_hor FOREIGN KEY(CodEmp)
+	REFERENCES empresa(CodEmp) ON UPDATE CASCADE
+);
