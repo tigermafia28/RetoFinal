@@ -93,28 +93,46 @@ VALUES ('Felipe Perez Garcia','89652418M','569842314578'),
 ('Marina Torres Gil','69366501L','500478635665'),
 ('Gervasio Ubeda Guil','52687412K','854268741256'),
 ('Evaristo Garrote Fino','54345871G','658741259874'),
-('Juan Carlos Borbon','75982564R','794613258465'),
-('Luz Cuesta Mogollon','46971325H','974652307419'),
-('Fermin Galarga Gutierrez','46825719U','016257419852'),
-('Florentino Perez Rodriguez','82974630D','066574108997'),
-('Andres Iniesta Lujan','45682175L','774586302125'),
-('Isabel Diaz Ayuso','74196582P','827364098126'),
-('Juan Cuesta Presidente','98723498U','997465801452'),
-('Josep Guardiola Sala','92736512E','987346238761'),
-('Cristiano Ronaldo Siu','82574690P','876234058107'),
-('Iker Jimenez Ruiz','24574598D','874596325741'),
-('Kiko Rivera Pantoja','23487462M','745821698201'),
-('Benita Torres Fuertes','485216074P','745290354127');
+('Juan Carlos Borbon','75982564R','794613258465');
+
 
 
 INSERT INTO empresa(NomEmp,CifEmp,DirEmp,CCCEmp)
 VALUES ('CocaCola','H85423645','Calle Severo Ochoa','01521486315'),
 ('Iberdrola','G52348756','Calle Santa Barbara','523157801453'),
-('Nestle','M32184623','Calle Azorin','642148953412'),
+('Metales bacanos','M32184623','Calle Azorin','642148953412'),
 ('Colacao','H24568713','Calle Ramon y Cajal','843897452536'),
 ('Microsoft','M74825698','Calle del Valle','458126874521'),
-('Chupachups','J78541268','Calle Falsa','873092834098'),
+('Chapas bonitas','J78541268','Calle Falsa','873092834098'),
 ('Tarradellas','P83765412','Calle Espetec','752148963574'),
-('Rumasa','G74582359','Calle Abeja','746982145982'),
-('Mercadona','E98734021','Calle Hacendado','472016980310'),
+('Heavy Metal','G74582359','Calle Abeja','746982145982'),
+('Asero pesado','E98734021','Calle Hacendado','472016980310'),
 ('Brugal','H934023459','Calle Concola','128745963257');
+
+INSERT INTO trabaja(CodTra,CodEmp,Convenio,GrupoCot,CatProf,FecInTra,FecSalTra)
+VALUES ('1','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','2','Titulado Medio','1999-02-08',NULL),
+('2','6','CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL','1','Analista de sistemas','2006-12-22',NULL),
+('3','4','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','4','Tecnico Analista','2003-05-03','2017-02-04'),
+('4','9','CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL','3','Jefe de primera Administrativo','1996-09-08',NULL),
+('5','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','3','Encargado Laboratorio','2001-06-10',NULL),
+('6','8','CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL','2','Diplomado Universitario','2005-11-01','2012-09-24'),
+('7','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','1','Titulado Superior','2000-12-05',NULL),
+('8','3','CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL','4','Maestro de Taller','2004-07-25','2019-08-22'),
+('9','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','5','Oficial de Primera','2009-10-07',NULL),
+('10','3','CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL','2','ATS','2012-04-04',NULL),
+('11','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','3','Delineante de Primera','2002-08-10','2022-04-11'),
+('12','6','CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL','5','Tecnico de organizacion de primera','1999-10-08',NULL),
+('13','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','6','Operador de maquinas basica','2008-04-11',NULL),
+('14','9','CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL','7','Vigilante','2018-08-09',NULL);
+
+
+
+CodTra INT(11),
+	CodEmp INT(11),
+	Convenio VARCHAR(100),
+	GrupoCot VARCHAR(50) NOT NULL,
+	CatProf VARCHAR(100) NOT NULL,
+	FecInTra DATE NOT NULL,
+	FecSalTra DATE,
+	numero grupo = cotizacion
+	categoria = categoria CatProf
