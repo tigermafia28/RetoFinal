@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nominas>
+	<convenios>
+		<convenio nombre="CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE." fecha="2022">
+			
+			<grupos>
+
+				<grupo numerogrupo="1">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Titulado Superior</categoria>
+							<salario>25851.50</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Titulado Superior</categoria>
+							<salario>20681.35</salario>
+						</nivel>
+						
+						<nivel numeronivel="3">
+							<categoria>Titulado Superior</categoria>
+							<salario>18096.18</salario>
+						</nivel>
+						
+					</niveles>
+				</grupo>
+				
+				<grupo numerogrupo="2">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Titulo Medio</categoria>
+							<salario>23116.65</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Titulo Medio</categoria>
+							<salario>18494.07</salario>
+						</nivel>
+						
+						<nivel numeronivel="3">
+							<categoria>Titulo Medio</categoria>
+							<salario>16181.56</salario>
+						</nivel>
+					
+					
+					</niveles>
+				</grupo>
+				
+				<grupo numerogrupo="3">
+				
+					<niveles>
+						<nivel numeronivel="1">
+							<subnivel letra="a">
+								<categoria>Jefe Administracion Superior, Jefe Delineacion</categoria>
+								<salario>23117.39</salario>
+							</subnivel>
+							
+							<subnivel letra="b">
+								<categoria>Jefe Administracion Superior, Jefe Delineacion</categoria>
+								<salario>22882.54</salario>
+							</subnivel>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Encargado laboratorio, Jefe de Primera Administrativo , Jefe equipo informatica, Analista de informatica, programador o tecnico de sistemas y comunicaciones</categoria>
+							<salario>20283.11</salario>
+						</nivel>
+						
+						<nivel numeronivel="3">
+							<subnivel letra="a">
+								<categoria>Delineante de primera</categoria>
+								<salario>19754.30</salario>
+							</subnivel>
+							
+							<subnivel letra="b">
+								<categoria>Delineante de seguna</categoria>
+								<salario>18765.92</salario>
+							</subnivel>
+						</nivel>
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="4">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Jefe Administrativo de Segunda, Cajero con firma, programador maquinas auxiliares, administrador de test, coordinador tratamientos cuestionarios, jefe explotacion, interpretes jurados, secretarias/os de Direccion </categoria>
+							<salario>18394.34</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<subnivel letra="a">
+								<categoria>Tecnico analista, analista de primera</categoria>
+								<salario>18091.01</salario>
+							</subnivel>
+							
+							<subnivel letra="b">
+								<categoria>Analista de segunda</categoria>
+								<salario>17411.77</salario>
+							</subnivel>
+							
+							<subnivel letra="c">
+								<categoria>Inspector entrevistador, encargado, operador tabuladores</categoria>
+								<salario>17142.28</salario>
+							</subnivel>
+						</nivel>
+					
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="5">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Oficial de primera, taquigrafo, cajero sin firma, coordinador de estudios, responsable equipo encuestas, operador ordenadores primera, jefe de maquinas basicas, clasificador, responsable central teleoperadores </categoria>
+							<salario>16903.15</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<subnivel letra="a">
+								<categoria>Oficial de primera en laboratorio</categoria>
+								<salario>16698.86</salario>
+							</subnivel>
+							
+							<subnivel letra="b">
+								<categoria>Oficial de seguna laboratorio</categoria>
+								<salario>16101.77</salario>
+							</subnivel>
+							
+						</nivel>
+						
+						<nivel numeronivel="3">
+							<categoria>Capataz</categoria>
+							<salario>16007.79</salario>
+						</nivel>
+						
+						<nivel numeronivel="4">
+							<categoria>Oficial de segunda , perforista verificador, ; mecanicos/as; carpinteros/as; electricistas; lector/a de contadores</categoria>
+							<salario>15908.40</salario>
+						</nivel>
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="6">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Operador de maquinas basicas, dibujante, entrevistador/encuestador; Oficial de oficios de primera, conductor, jardinero</categoria>
+							<salario>14914.15</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Calcador, Conserje Mayor, Conserje ordenanza- Vigilante de noche, oficial oficios de segunda </categoria>
+							<salario>14218.42</salario>
+						</nivel>
+					</niveles>
+				</grupo>
+				<grupo numerogrupo="7">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Auxiliar Administrativo mas de 3 años, Teleoperadores mas de 3 años </categoria>
+							<salario>13770.00</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Auxiliar administrativo de entrada, perforista de segunda; auxiliar de laboratorio; Ayudante operador, cobrador-pagador; auxiliar de caja, operador reproducción multicop, Peón, mozo, personal de limpieza, personal de oficios basicos, conserje ordenanza portero día; costurera oficial, botones, bedeles, teleoperadores</categoria>
+							<salario>13566.00</salario>
+						</nivel>
+					</niveles>
+				</grupo>
+			</grupos>
+			
+			<pluses>
+				<plus>
+					<nombre>Ayuda especial</nombre>
+					<cantidad>119.60</cantidad>
+				</plus>
+				
+				<plus>
+					<nombre>Plus de transporte</nombre>
+					<cantidad>2.49</cantidad>
+				</plus>
+				
+				<plus>
+					<nombre>Plus de teletrabajo</nombre>
+					<cantidad>2.49</cantidad>
+				</plus>
+				
+				<plus>
+					<nombre>Dieta media</nombre>
+					<cantidad>19.20</cantidad>
+				</plus>
+				
+				<plus>
+					<nombre>Dieta completa</nombre>
+					<cantidad>56.48</cantidad>
+				</plus>
+			</pluses>
+		</convenio>
+		
+		
+		<convenio nombre="CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE." fecha="2023">
+		<grupos>
+
+				<grupo numerogrupo="1">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Titulado Superior</categoria>
+							<salario>26368.53</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Titulado Superior</categoria>
+							<salario>21094.97</salario>
+						</nivel>
+						
+						<nivel numeronivel="3">
+							<categoria>Titulado Superior</categoria>
+							<salario>18458.10</salario>
+						</nivel>
+						
+					</niveles>
+				</grupo>
+				
+				<grupo numerogrupo="2">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Titulo Medio</categoria>
+							<salario>23579.00</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Titulo Medio</categoria>
+							<salario>18863.95</salario>
+						</nivel>
+						
+						<nivel numeronivel="3">
+							<categoria>Titulo Medio</categoria>
+							<salario>16505.19</salario>
+						</nivel>
+					
+					
+					</niveles>
+				</grupo>
+				
+				<grupo numerogrupo="3">
+				
+					<niveles>
+						<nivel numeronivel="1">
+							<subnivel letra="a">
+								<categoria>Jefe Administracion Superior, Jefe Delineacion</categoria>
+								<salario>23579.74</salario>
+							</subnivel>
+							
+							<subnivel letra="b">
+								<categoria>Jefe Administracion Superior, Jefe Delineacion</categoria>
+								<salario>23340.19</salario>
+							</subnivel>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Encargado laboratorio, Jefe de Primera Administrativo , Jefe equipo informatica, Analista de informatica, programador o tecnico de sistemas y comunicaciones</categoria>
+							<salario>20688.77</salario>
+						</nivel>
+						
+						<nivel numeronivel="3">
+							<subnivel letra="a">
+								<categoria>Delineante de primera</categoria>
+								<salario>20149.39</salario>
+							</subnivel>
+							
+							<subnivel letra="b">
+								<categoria>Delineante de seguna</categoria>
+								<salario>19141.24</salario>
+							</subnivel>
+						</nivel>
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="4">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Jefe Administrativo de Segunda, Cajero con firma, programador maquinas auxiliares, administrador de test, coordinador tratamientos cuestionarios, jefe explotacion, interpretes jurados, secretarias/os de Direccion </categoria>
+							<salario>18762.23</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<subnivel letra="a">
+								<categoria>Tecnico analista, analista de primera</categoria>
+								<salario>18452.83</salario>
+							</subnivel>
+							
+							<subnivel letra="b">
+								<categoria>Analista de segunda</categoria>
+								<salario>17760.00</salario>
+							</subnivel>
+							
+							<subnivel letra="c">
+								<categoria>Inspector entrevistador, encargado, operador tabuladores</categoria>
+								<salario>17485.13</salario>
+							</subnivel>
+						</nivel>
+					
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="5">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Oficial de primera, taquigrafo, cajero sin firma, coordinador de estudios, responsable equipo encuestas, operador ordenadores primera, jefe de maquinas basicas, clasificador, responsable central teleoperadores </categoria>
+							<salario>17241.22</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<subnivel letra="a">
+								<categoria>Oficial de primera en laboratorio</categoria>
+								<salario>17032.84</salario>
+							</subnivel>
+							
+							<subnivel letra="b">
+								<categoria>Oficial de seguna laboratorio</categoria>
+								<salario>16423.81</salario>
+							</subnivel>
+							
+						</nivel>
+						
+						<nivel numeronivel="3">
+							<categoria>Capataz</categoria>
+							<salario>16327.94</salario>
+						</nivel>
+						
+						<nivel numeronivel="4">
+							<categoria>Oficial de segunda , perforista verificador, ; mecanicos/as; carpinteros/as; electricistas; lector/a de contadores</categoria>
+							<salario>16226.57</salario>
+						</nivel>
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="6">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Operador de maquinas basicas, dibujante, entrevistador/encuestador; Oficial de oficios de primera, conductor, jardinero</categoria>
+							<salario>15212.44</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Calcador, Conserje Mayor, Conserje ordenanza- Vigilante de noche, oficial oficios de segunda </categoria>
+							<salario>14502.79</salario>
+						</nivel>
+					</niveles>
+				</grupo>
+				<grupo numerogrupo="7">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Auxiliar Administrativo mas de 3 años, Teleoperadores mas de 3 años </categoria>
+							<salario>14045.40</salario>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Auxiliar administrativo de entrada, perforista de segunda; auxiliar de laboratorio; Ayudante operador, cobrador-pagador; auxiliar de caja, operador reproduccion multicop, Peon, mozo, personal de limpieza, personal de oficios basicos, conserje ordenanza portero dia; costurera oficial, botones, bedeles, teleoperadores</categoria>
+							<salario>13837.32</salario>
+						</nivel>
+					</niveles>
+				</grupo>
+			</grupos>
+			
+			<pluses>
+				<plus>
+					<nombre>Ayuda especial</nombre>
+					<cantidad>122.00</cantidad>
+				</plus>
+				
+				<plus>
+					<nombre>Plus de transporte</nombre>
+					<cantidad>2.54</cantidad>
+				</plus>
+				
+				<plus>
+					<nombre>Plus de teletrabajo</nombre>
+					<cantidad>2.54</cantidad>
+				</plus>
+				
+				<plus>
+					<nombre>Dieta media</nombre>
+					<cantidad>19.58</cantidad>
+				</plus>
+				
+				<plus>
+					<nombre>Dieta completa</nombre>
+					<cantidad>57.61</cantidad>
+				</plus>
+			</pluses>
+		
+		</convenio>
+		
+		
+				<convenio nombre="CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL." fecha="2022">
+		<grupos>
+
+				<grupo numerogrupo="1">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Ingenieros Arquitectos y Licen. ;Analistas de Sistemas</categoria>
+							<salario>27493.06</salario>
+							<PCI>5.57</PCI>
+						</nivel>
+					</niveles>
+				</grupo>
+				
+				<grupo numerogrupo="2">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>ATS;Peritos,Ing.Tec y Apareja;Diplomados Universitarios;Titulados Superiores de Entrada;Graduados Sociales</categoria>
+							<salario>25516.68</salario>
+							<PCI>5.57</PCI>
+						</nivel>
+						
+					</niveles>
+				</grupo>
+				
+				<grupo numerogrupo="3">
+				
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Jefe de Organizacion de primera;Delineante proyectista y dibujante</categoria>
+							<salario>20726.86</salario>
+							<PCI>5.82</PCI>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Jefe de primera Administrativo</categoria>
+							<salario>21330.12</salario>
+							<PCI>5.82</PCI>
+						</nivel>
+						
+						<nivel numeronivel="3">
+							<categoria>Jefe de Taller;Jefe de Laboratorio</categoria>
+							<salario>22144.78</salario>
+							<PCI>5.82</PCI>
+						</nivel>
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="4">
+					
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Jefe de Organizacion de Segunda;Jefe de Seccion;Programador de ordenador</categoria>
+							<salario>19767.44</salario>
+							<PCI>5.82</PCI>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Jefe de segunda administrativo</categoria>
+							<salario>19750.36</salario>
+							<PCI>5.82</PCI>
+						</nivel>
+						<nivel numeronivel="3">
+							<categoria>Encargado;Maestro de taller;Contramaestre</categoria>
+							<salario>19298.83</salario>
+							<PCI>5.64</PCI>
+						</nivel>
+					
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="5">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Oficina de primera administrativo;Tecnico de organizacion de primera;Delineante de primera;Analista de primera;Practico de topografia;Viajante;Fotografo;Archivador de biblioteca;Conductor mecanico C1,C2,D,E;Delineante de segunda;Tecnico de organizacion de segunda;Oficial de segunda administrativo </categoria>
+							<salario>17645.74</salario>
+							<PCI>6.02</PCI>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Oficial de primera;Oficial de segunda</categoria>
+							<salario>16896.6</salario>
+							<PCI>6.02</PCI>
+						</nivel>
+					</niveles>
+				
+				</grupo>
+				
+				<grupo numerogrupo="6">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Conductor;Auxiliar administrativo;Auxiliar de organizacion;Conserje;Analista de segunda;Listero;Dependiente de economato;Telefonista;Auxiliar de oficina;Auxiliar de laboratorio;Pesador basculero;Almacenero</categoria>
+							<salario>16371.46</salario>
+							<PCI>5.98</PCI>
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Oficial de tercera;Especialista;Capataz </categoria>
+							<salario>16132.2</salario>
+							<PCI>5.84</PCI>
+						</nivel>
+					</niveles>
+				</grupo>
+				<grupo numerogrupo="7">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Vigilante;Portero;Ordenanza</categoria>
+							<salario>15817.62</salario>
+							<PCI>5.84</PCI> 
+						</nivel>
+						
+						<nivel numeronivel="2">
+							<categoria>Peon</categoria>
+							<salario>15703.8</salario>
+							<PCI>5.77</PCI>
+						</nivel>
+					</niveles>
+				</grupo>
+				<grupo numerogrupo="8">
+					<niveles>
+						<nivel numeronivel="1">
+							<categoria>Formacion primer año</categoria>
+							<salario>20619.76</salario>
+							<PCI>4.18</PCI>
+						</nivel>
+
+						<nivel numeronivel="2">
+							<categoria>Formacion segundo y tercer año</categoria>
+							<salario>21994.42</salario>
+							<PCI>4.46</PCI>
+						</nivel>
+
+					</niveles>
+
+				</grupo>
+			</grupos>
+			
+			<pluses>
+				
+				<plus>
+					<nombre>Plus de transporte</nombre>
+					<cantidad>0.38</cantidad>
+				</plus>
+			</pluses>
+		
+		</convenio>
+	</convenios>
+			
+			<tipos_contrato>
+				<modalidades>
+					<modalidad nombre="Formativos">
+						<tipo>Contrato de formacion en alternancia</tipo>
+						<tipo>Contrato para la obtencion de la practica profesional</tipo>
+					</modalidad>
+					<modalidad nombre="Temporales">
+						<tipo>Circunstancias de la produccion</tipo>
+						<tipo>Sustitucion de una persona trabajadora</tipo>
+						<tipo>Encadenamiento de contratos temporales</tipo>
+					</modalidad>
+					<modalidad nombre="A tiempo parcial">
+						<tipo>Contrato a tiempo parcial comun</tipo>
+						<tipo>Contrato de relevo y de jubilacion parcial</tipo>
+						<tipo>Contrato fijo-discontinuo</tipo>
+					</modalidad>
+					<modalidad nombre="Indefinidos">
+						<tipo>Contrato indefinido ordinario</tipo>
+						<tipo>Contrataciones indefinidas bonificadas</tipo>
+					</modalidad>
+				</modalidades>
+			</tipos_contrato>
+
+
+</nominas>
