@@ -1,22 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package jo.udk.leerxml;
 
-import java.io.ByteArrayOutputStream;
+//import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.StringReader;
+//import java.io.InputStream;
+//import java.io.StringReader;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
+//import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 /**
@@ -158,7 +153,11 @@ public class LeerXML {
 							Categoria categoria = new Categoria();
 							categoria.nivel = elementoNivel.getAttribute("numeronivel");
 							categoria.nombre = elementoNivel.getElementsByTagName("categoria").item(0).getTextContent();
-							categoria.salario = Double.parseDouble(elementoNivel.getElementsByTagName("salario").item(0).getTextContent());
+							categoria.salario = Float.parseFloat(elementoNivel.getElementsByTagName("salario").item(0).getTextContent());
+							
+							boolean hayPCI = elementoNivel.getElementsByTagName("PCI").getLength() == 0;
+								if(!hayPCI)
+									categoria.pci = Float.parseFloat(elementoNivel.getElementsByTagName("PCI").item(0).getTextContent());
 							
 							cat[indiceNivAux] = categoria;
 						}
@@ -171,7 +170,11 @@ public class LeerXML {
 								Categoria categoria = new Categoria();
 								categoria.nivel = elementoNivel.getAttribute("numeronivel") + elementoSubnivel.getAttribute("letra");
 								categoria.nombre = elementoSubnivel.getElementsByTagName("categoria").item(0).getTextContent();
-								categoria.salario = Double.parseDouble(elementoSubnivel.getElementsByTagName("salario").item(0).getTextContent());
+								categoria.salario = Float.parseFloat(elementoSubnivel.getElementsByTagName("salario").item(0).getTextContent());
+								
+								boolean hayPCI = elementoNivel.getElementsByTagName("PCI").getLength() == 0;
+								if(!hayPCI)
+									categoria.pci = Float.parseFloat(elementoSubnivel.getElementsByTagName("PCI").item(0).getTextContent());
 
 								cat[indiceNivAux + indiceSub] = categoria;
 							}
@@ -212,12 +215,13 @@ public class LeerXML {
 				System.out.println(conv.nombre + " " + conv.fecha);
 				for(Grupo grup : conv.grupos){
 					if(grup != null){
-						System.out.println("\t" + grup.numero);
+						System.out.println("\tGrupo " + grup.numero);
 						for(Categoria cat : grup.categorias){
 							if(cat != null){
-								System.out.println("\t\t" + cat.nivel);
+								System.out.println("\t\tNivel " + cat.nivel);
 								System.out.println("\t\t\t" + cat.nombre);
 								System.out.println("\t\t\t" + cat.salario);
+								System.out.println("\t\t\t" + cat.pci);
 							}
 						}
 					}
@@ -225,6 +229,7 @@ public class LeerXML {
 				System.out.println();
 			}
 		}
+		
 	}
 	
 }

@@ -8,9 +8,6 @@ package jo.udk.leerxml;
  *
  * @author usuario
  */
-public class Categoria {
-	public String nivel;
-	public String nombre;
-	public float salario;
-	public float pci;
+public class Trabajador {
+	
 }
