@@ -177,26 +177,31 @@
 				<plus>
 					<nombre>Ayuda especial</nombre>
 					<cantidad>119.60</cantidad>
+					<retribucion>Mensual</retribucion>
 				</plus>
 				
 				<plus>
 					<nombre>Plus de transporte</nombre>
 					<cantidad>2.49</cantidad>
+					<retribucion>Kilometrica</retribucion>
 				</plus>
 				
 				<plus>
 					<nombre>Plus de teletrabajo</nombre>
 					<cantidad>2.49</cantidad>
+					<retribucion>Diaria</retribucion>
 				</plus>
 				
 				<plus>
 					<nombre>Dieta media</nombre>
 					<cantidad>19.20</cantidad>
+					<retribucion>Diaria</retribucion>
 				</plus>
 				
 				<plus>
 					<nombre>Dieta completa</nombre>
 					<cantidad>56.48</cantidad>
+					<retribucion>Diaria</retribucion>
 				</plus>
 			</pluses>
 		</convenio>
@@ -377,26 +382,31 @@
 				<plus>
 					<nombre>Ayuda especial</nombre>
 					<cantidad>122.00</cantidad>
+					<retribucion>Mensual</retribucion>
 				</plus>
 				
 				<plus>
 					<nombre>Plus de transporte</nombre>
 					<cantidad>2.54</cantidad>
+					<retribucion>Kilometrica</retribucion>
 				</plus>
 				
 				<plus>
 					<nombre>Plus de teletrabajo</nombre>
 					<cantidad>2.54</cantidad>
+					<retribucion>Diaria</retribucion>
 				</plus>
 				
 				<plus>
 					<nombre>Dieta media</nombre>
 					<cantidad>19.58</cantidad>
+					<retribucion>Diaria</retribucion>
 				</plus>
 				
 				<plus>
 					<nombre>Dieta completa</nombre>
 					<cantidad>57.61</cantidad>
+					<retribucion>Diaria</retribucion>
 				</plus>
 			</pluses>
 		
@@ -412,7 +422,11 @@
 						<nivel numeronivel="1">
 							<categoria>Ingenieros Arquitectos y Licen. ;Analistas de Sistemas</categoria>
 							<salario>27493.06</salario>
-							<PCI>5.57</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.57</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 					</niveles>
 				</grupo>
@@ -423,7 +437,11 @@
 						<nivel numeronivel="1">
 							<categoria>ATS;Peritos,Ing.Tec y Apareja;Diplomados Universitarios;Titulados Superiores de Entrada;Graduados Sociales</categoria>
 							<salario>25516.68</salario>
-							<PCI>5.57</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.57</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 						
 					</niveles>
@@ -435,19 +453,31 @@
 						<nivel numeronivel="1">
 							<categoria>Jefe de Organizacion de primera;Delineante proyectista y dibujante</categoria>
 							<salario>20726.86</salario>
-							<PCI>5.82</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.82</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 						
 						<nivel numeronivel="2">
 							<categoria>Jefe de primera Administrativo</categoria>
 							<salario>21330.12</salario>
-							<PCI>5.82</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.82</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 						
 						<nivel numeronivel="3">
 							<categoria>Jefe de Taller;Jefe de Laboratorio</categoria>
 							<salario>22144.78</salario>
-							<PCI>5.82</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.82</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 					</niveles>
 				
@@ -459,18 +489,30 @@
 						<nivel numeronivel="1">
 							<categoria>Jefe de Organizacion de Segunda;Jefe de Seccion;Programador de ordenador</categoria>
 							<salario>19767.44</salario>
-							<PCI>5.82</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.82</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 						
 						<nivel numeronivel="2">
 							<categoria>Jefe de segunda administrativo</categoria>
 							<salario>19750.36</salario>
-							<PCI>5.82</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.82</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 						<nivel numeronivel="3">
 							<categoria>Encargado;Maestro de taller;Contramaestre</categoria>
 							<salario>19298.83</salario>
-							<PCI>5.64</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.64</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 					
 					</niveles>
@@ -482,13 +524,21 @@
 						<nivel numeronivel="1">
 							<categoria>Oficina de primera administrativo;Tecnico de organizacion de primera;Delineante de primera;Analista de primera;Practico de topografia;Viajante;Fotografo;Archivador de biblioteca;Conductor mecanico C1,C2,D,E;Delineante de segunda;Tecnico de organizacion de segunda;Oficial de segunda administrativo </categoria>
 							<salario>17645.74</salario>
-							<PCI>6.02</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>6.02</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 						
 						<nivel numeronivel="2">
 							<categoria>Oficial de primera;Oficial de segunda</categoria>
 							<salario>16896.6</salario>
-							<PCI>6.02</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>6.02</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 					</niveles>
 				
@@ -499,13 +549,21 @@
 						<nivel numeronivel="1">
 							<categoria>Conductor;Auxiliar administrativo;Auxiliar de organizacion;Conserje;Analista de segunda;Listero;Dependiente de economato;Telefonista;Auxiliar de oficina;Auxiliar de laboratorio;Pesador basculero;Almacenero</categoria>
 							<salario>16371.46</salario>
-							<PCI>5.98</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.98</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 						
 						<nivel numeronivel="2">
 							<categoria>Oficial de tercera;Especialista;Capataz </categoria>
 							<salario>16132.2</salario>
-							<PCI>5.84</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.84</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 					</niveles>
 				</grupo>
@@ -514,13 +572,21 @@
 						<nivel numeronivel="1">
 							<categoria>Vigilante;Portero;Ordenanza</categoria>
 							<salario>15817.62</salario>
-							<PCI>5.84</PCI> 
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.84</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 						
 						<nivel numeronivel="2">
 							<categoria>Peon</categoria>
 							<salario>15703.8</salario>
-							<PCI>5.77</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>5.77</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 					</niveles>
 				</grupo>
@@ -529,13 +595,21 @@
 						<nivel numeronivel="1">
 							<categoria>Formacion primer año</categoria>
 							<salario>20619.76</salario>
-							<PCI>4.18</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>4.18</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 
 						<nivel numeronivel="2">
 							<categoria>Formacion segundo y tercer año</categoria>
 							<salario>21994.42</salario>
-							<PCI>4.46</PCI>
+							<plus>
+								<nombre>Plus de Carencia de Incentivos</nombre>
+								<cantidad>4.46</cantidad>
+								<retribucion>Diaria</retribucion>
+							</plus>
 						</nivel>
 
 					</niveles>
@@ -548,6 +622,7 @@
 				<plus>
 					<nombre>Plus de transporte</nombre>
 					<cantidad>0.38</cantidad>
+					<retribucion>Kilometrica</retribucion>
 				</plus>
 			</pluses>
 		

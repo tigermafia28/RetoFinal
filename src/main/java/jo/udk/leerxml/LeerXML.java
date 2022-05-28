@@ -54,13 +54,32 @@ public class LeerXML {
 					for(int indiceNiv = 0, indiceNivAux = 0; indiceNiv < niveles.getLength(); indiceNiv++, indiceNivAux++){
 						Node nodoNivel = niveles.item(indiceNiv);
 						Element elementoNivel = (Element) nodoNivel;
-						
+
+						NodeList nodosPlus = elementoNivel.getElementsByTagName("plus");
+						Plus[] pluses = new Plus[1024];
+
+						if(nodosPlus != null){
+							for(int indicePlus = 0; indicePlus < nodosPlus.getLength(); indicePlus++){
+								Node nodoPlus = nodosPlus.item(indicePlus);
+								Element elementoPlus = (Element) nodoPlus;
+
+								Plus plus = new Plus();
+								plus.nombre = elementoPlus.getElementsByTagName("nombre").item(0).getTextContent();
+								plus.cantidad = Float.parseFloat(elementoPlus.getElementsByTagName("cantidad").item(0).getTextContent());
+								plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
+								plus.ambito = Ambito.ESPECIFICO;
+
+								pluses[indicePlus] = plus;
+							}
+						}
+
 						NodeList subniveles = elementoNivel.getElementsByTagName("subnivel");
 						if(subniveles.getLength() == 0){
 							Categoria categoria = new Categoria();
 							categoria.nivel = elementoNivel.getAttribute("numeronivel");
 							categoria.nombre = elementoNivel.getElementsByTagName("categoria").item(0).getTextContent();
 							categoria.salario = Float.parseFloat(elementoNivel.getElementsByTagName("salario").item(0).getTextContent());
+							categoria.pluses = pluses;
 
 							/*
 							boolean hayPCI = elementoNivel.getElementsByTagName("PCI").getLength() == 0;
@@ -74,11 +93,30 @@ public class LeerXML {
 							for(indiceSub = 0; indiceSub < subniveles.getLength(); indiceSub++){
 								Node nodoSubnivel = subniveles.item(indiceSub);
 								Element elementoSubnivel = (Element) nodoSubnivel;
-								
+
+								nodosPlus = elementoSubnivel.getElementsByTagName("plus");
+								pluses = new Plus[1024];
+
+								if(nodosPlus != null){
+									for(int indicePlus = 0; indicePlus < nodosPlus.getLength(); indicePlus++){
+										Node nodoPlus = nodosPlus.item(indicePlus);
+										Element elementoPlus = (Element) nodoPlus;
+
+										Plus plus = new Plus();
+										plus.nombre = elementoPlus.getElementsByTagName("nombre").item(0).getTextContent();
+										plus.cantidad = Float.parseFloat(elementoPlus.getElementsByTagName("cantidad").item(0).getTextContent());
+										plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
+										plus.ambito = Ambito.ESPECIFICO;
+
+										pluses[indicePlus] = plus;
+									}
+								}
+
 								Categoria categoria = new Categoria();
 								categoria.nivel = elementoNivel.getAttribute("numeronivel") + elementoSubnivel.getAttribute("letra");
 								categoria.nombre = elementoSubnivel.getElementsByTagName("categoria").item(0).getTextContent();
 								categoria.salario = Float.parseFloat(elementoSubnivel.getElementsByTagName("salario").item(0).getTextContent());
+								categoria.pluses = pluses;
 
 								/*
 								boolean hayPCI = elementoNivel.getElementsByTagName("PCI").getLength() == 0;
@@ -114,7 +152,7 @@ public class LeerXML {
 						Plus plus = new Plus();
 						plus.nombre = elementoPlus.getElementsByTagName("nombre").item(0).getTextContent();
 						plus.cantidad = Float.parseFloat(elementoPlus.getElementsByTagName("cantidad").item(0).getTextContent());
-						//plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
+						plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
 						plus.ambito = Ambito.GENERAL;
 
 						pluses[indicePlus] = plus;
@@ -166,6 +204,17 @@ public class LeerXML {
 								System.out.println("\t\tNivel " + cat.nivel);
 								System.out.println("\t\t\t" + cat.nombre);
 								System.out.println("\t\t\t" + cat.salario);
+								if(cat.pluses[0] != null) {
+									System.out.println("\t\t\tPluses");
+									for (Plus plus : cat.pluses) {
+										if (plus != null) {
+											System.out.println("\t\t\t\t" + plus.nombre);
+											System.out.println("\t\t\t\t\t Ámbito: " + plus.ambito.name().toLowerCase());
+											System.out.println("\t\t\t\t\t Retribución: " + plus.retribucion.name().toLowerCase());
+											System.out.println("\t\t\t\t\t Cantidad: " + plus.cantidad);
+										}
+									}
+								}
 							}
 						}
 					}
@@ -175,7 +224,7 @@ public class LeerXML {
 					if(plus != null){
 						System.out.println("\t\t" + plus.nombre);
 						System.out.println("\t\t\t Ámbito: " + plus.ambito.name().toLowerCase());
-						//System.out.println("\t\t\t Retribución: " + plus.retribucion.name().toLowerCase());
+						System.out.println("\t\t\t Retribución: " + plus.retribucion.name().toLowerCase());
 						System.out.println("\t\t\t Cantidad: " + plus.cantidad);
 					}
 				}
