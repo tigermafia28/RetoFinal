@@ -1,7 +1,8 @@
-package jo.udk.leerxml;
+package jo.udk.leerxml.clases;
 
 public class Nomina {
-	
+
+	/*
 	public float SalBase;
 	public float Prorrata;
 	public float PlusTrans;
@@ -25,6 +26,17 @@ public class Nomina {
 	public float BCCP;
 	public float BHE;
 	public float BHEFM;
-	
+	*/
+
+	//public long id;
+	public String diaInicio; //Periodo de liquidación.
+	public String diaFinal;
+	public String periodo; //Mayo de 2013, por ejemplo.
+	public String nHoras;
+	public String irpf;
+
+	public String rutaPDF;
+	public String rutaXML;
+
 	
 }

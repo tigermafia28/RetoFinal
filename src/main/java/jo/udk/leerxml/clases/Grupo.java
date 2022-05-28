@@ -1,4 +1,4 @@
-package jo.udk.leerxml;
+package jo.udk.leerxml.clases;
 
 public class Grupo {
 	public short numero;

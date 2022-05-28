@@ -5,6 +5,12 @@ import java.io.IOException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import jo.udk.leerxml.clases.Categoria;
+import jo.udk.leerxml.clases.Convenio;
+import jo.udk.leerxml.clases.Grupo;
+import jo.udk.leerxml.clases.Plus;
+import jo.udk.leerxml.enums.Ambito;
+import jo.udk.leerxml.enums.Retribucion;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -81,11 +87,6 @@ public class LeerXML {
 							categoria.salario = Float.parseFloat(elementoNivel.getElementsByTagName("salario").item(0).getTextContent());
 							categoria.pluses = pluses;
 
-							/*
-							boolean hayPCI = elementoNivel.getElementsByTagName("PCI").getLength() == 0;
-								if(!hayPCI)
-									categoria.pci = Float.parseFloat(elementoNivel.getElementsByTagName("PCI").item(0).getTextContent());
-							*/
 							cat[indiceNivAux] = categoria;
 						}
 						else{
@@ -118,11 +119,6 @@ public class LeerXML {
 								categoria.salario = Float.parseFloat(elementoSubnivel.getElementsByTagName("salario").item(0).getTextContent());
 								categoria.pluses = pluses;
 
-								/*
-								boolean hayPCI = elementoNivel.getElementsByTagName("PCI").getLength() == 0;
-								if(!hayPCI)
-									categoria.pci = Float.parseFloat(elementoSubnivel.getElementsByTagName("PCI").item(0).getTextContent());
-								*/
 								cat[indiceNivAux + indiceSub] = categoria;
 							}
 							
@@ -158,19 +154,6 @@ public class LeerXML {
 						pluses[indicePlus] = plus;
 					}
 				}
-				/*
-				if(!(elementoConvenio.getChildNodes().getLength() < 2)) {
-					NodeList pluses = elementoConvenio.getLastChild().getChildNodes();
-					Plus[] plus = new Plus[1024];
-
-					for (int indicePlus = 0; indicePlus < pluses.getLength(); indicePlus++) {
-						Node nodoPlus = pluses.item(indicePlus);
-						Element elementoPlus = (Element) nodoPlus;
-
-
-					}
-				}
-				*/
 
 				Convenio convenio = new Convenio();
 				convenio.nombre = elementoConvenio.getAttribute("nombre");

@@ -1,4 +1,4 @@
-package jo.udk.leerxml;
+package jo.udk.leerxml.enums;
 
 public enum Retribucion {
 	HORARIA,
