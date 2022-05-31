@@ -4,7 +4,6 @@
  */
 package Grupo2.RetoFinal;
 
-import Grupo2.putas.Trabajador;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;

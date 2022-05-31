@@ -4,7 +4,6 @@
  */
 package Grupo2.RetoFinal;
 
-import Grupo2.putas.Trabajador;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -42,12 +41,12 @@ public class ControladorTrabajador {
     @GetMapping("/{id}")
     public ResponseEntity<String> getTrabajadorById(@PathVariable("id") Long id) {
 
-        Trabajador usuario = servicio.getTrabajadorById(id);
+        Trabajador trabajador = servicio.getTrabajadorById(id);
 
-        if (usuario == null) {
+        if (trabajador == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("El trabajador con id=" + id + " no existe");
         } else {
-            return ResponseEntity.ok(usuario.getNombre());
+            return ResponseEntity.ok(trabajador.getNombre());
         }
     }
 	
