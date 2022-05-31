@@ -92,7 +92,7 @@ VALUES ('Felipe Perez Garcia','89652418M','569842314578'),
 ('Paula Gomez Garcia','77804562L','234512567216'),
 ('Javier Berenguer Manzanera','60315950M','800235478951'),
 ('Jennifer Leal Blanc','54655802A','220354786542'),
-('Ferran Villa Capdevila','96542302N','5842008764231'),
+('Ferran Villa Capdevila','96542302N','584200876423'),
 ('Marina Torres Gil','69366501L','500478635665'),
 ('Gervasio Ubeda Guil','52687412K','854268741256'),
 ('Evaristo Garrote Fino','54345871G','658741259874'),
@@ -101,7 +101,7 @@ VALUES ('Felipe Perez Garcia','89652418M','569842314578'),
 
 
 INSERT INTO empresa(NomEmp,CifEmp,DirEmp,CCCEmp)
-VALUES ('CocaCola','H85423645','Calle Severo Ochoa','01521486315'),
+VALUES ('CocaCola','H85423645','Calle Severo Ochoa','015214863158'),
 ('Iberdrola','G52348756','Calle Santa Barbara','523157801453'),
 ('Metales bacanos','M32184623','Calle Azorin','642148953412'),
 ('Colacao','H24568713','Calle Ramon y Cajal','843897452536'),
