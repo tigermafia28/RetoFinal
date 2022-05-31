@@ -172,7 +172,7 @@ public class LeerXML {
     }
 
 	public static void main(String[] args){
-		String nombre = "Nominas.xml";
+		/*String nombre = "Nominas.xml";
 		File xml = new File(nombre);
 		Convenio[] convenios = getXMLContent(xml);
 		
@@ -214,7 +214,7 @@ public class LeerXML {
 				System.out.println();
 			}
 		}
-		
+		*/
 	}
 	
 }
