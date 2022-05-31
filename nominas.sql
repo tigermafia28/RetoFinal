@@ -17,7 +17,7 @@ CREATE TABLE empresa(
 	NomEmp VARCHAR(50) NOT NULL,
 	CifEmp VARCHAR(9) NOT NULL UNIQUE,
 	DirEmp VARCHAR(100),
-	CCCEmp VARCHAR(11) NOT NULL UNIQUE
+	CCCEmp VARCHAR(10000) NOT NULL UNIQUE
 );
 
 CREATE TABLE trabaja(
@@ -83,34 +83,34 @@ CREATE TABLE horas(
 );
 
 INSERT INTO trabajador(NomTra,NifTra,NafSSTra)
-VALUES ('Felipe Perez Garcia','89652418M','56984231457'),
-('Alejandro Ubeda Miralles','54216874B','75423654874'),
-('Angel Riquelme Armando','65247856L','58423178965'),
-('Maria Garcia Hernández','78056945L','63215975464'),
-('Elena Pascual Ramon','95378435D','84267913497'),
-('Pedro Benito Gil','88560248H','00254967854'),
-('Paula Gomez Garcia','77804562L','23451256721'),
-('Javier Berenguer Manzanera','60315950M','800235478951'),
+VALUES ('Felipe Perez Garcia','89652418M','569842314578'),
+('Alejandro Ubeda Miralles','54216874B','754236548748'),
+('Angel Riquelme Armando','65247856L','584231789655'),
+('Maria Garcia Hernández','78056945L','963215975464'),
+('Elena Pascual Ramon','95378435D','842679134974'),
+('Pedro Benito Gil','88560248H','002549678548'),
+('Paula Gomez Garcia','77804562L','234512567213'),
+('Javier Berenguer Manzanera','60315950M','080023547895'),
 ('Jennifer Leal Blanc','54655802A','220354786542'),
-('Ferran Villa Capdevila','96542302N','58420087642'),
-('Marina Torres Gil','69366501L','50047863566'),
-('Gervasio Ubeda Guil','52687412K','85426874125'),
-('Evaristo Garrote Fino','54345871G','65874125987'),
-('Juan Carlos Borbon','75982564R','79461325846');
+('Ferran Villa Capdevila','96542302N','584200876421'),
+('Marina Torres Gil','69366501L','550047863566'),
+('Gervasio Ubeda Guil','52687412K','854268741252'),
+('Evaristo Garrote Fino','54345871G','658741259873'),
+('Juan Carlos Borbon','75982564R','794613258465');
 
 
 
 INSERT INTO empresa(NomEmp,CifEmp,DirEmp,CCCEmp)
-VALUES ('CocaCola','H85423645','Calle Severo Ochoa','015214863158'),
-('Iberdrola','G52348756','Calle Santa Barbara','523157801453'),
-('Metales bacanos','M32184623','Calle Azorin','642148953412'),
-('Colacao','H24568713','Calle Ramon y Cajal','843897452536'),
-('Microsoft','M74825698','Calle del Valle','458126874521'),
-('Chapas bonitas','J78541268','Calle Falsa','873092834098'),
-('Tarradellas','P83765412','Calle Espetec','752148963574'),
-('Heavy Metal','G74582359','Calle Abeja','746982145982'),
-('Asero pesado','E98734021','Calle Hacendado','472016980310'),
-('Brugal','H934023459','Calle Concola','128745963257');
+VALUES ('CocaCola','H85423645','Calle Severo Ochoa','01521486315'),
+('Iberdrola','G52348756','Calle Santa Barbara','52315780145'),
+('Metales bacanos','M32184623','Calle Azorin','64214895341'),
+('Colacao','H24568713','Calle Ramon y Cajal','84389745253'),
+('Microsoft','M74825698','Calle del Valle','45812687452'),
+('Chapas bonitas','J78541268','Calle Falsa','87309283409'),
+('Tarradellas','P83765412','Calle Espetec','52148963574'),
+('Heavy Metal','G74582359','Calle Abeja','74698214598'),
+('Asero pesado','E98734021','Calle Hacendado','47201698031'),
+('Brugal','H934023459','Calle Concola','12874596325');
 
 INSERT INTO trabaja(CodTra,CodEmp,Convenio,GrupoCot,CatProf,TipoContrato,FecInTra,FecSalTra)
 VALUES ('1','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','2','Titulado Medio','INDEFINIDO','1999-02-08',NULL),
