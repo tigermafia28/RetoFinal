@@ -83,20 +83,20 @@ CREATE TABLE horas(
 );
 
 INSERT INTO trabajador(NomTra,NifTra,NafSSTra)
-VALUES ('Felipe Perez Garcia','89652418M','569842314578'),
-('Alejandro Ubeda Miralles','54216874B','754236548745'),
-('Angel Riquelme Armando','65247856L','584231789654'),
-('Maria Garcia Hernández','78056945L','632159754642'),
-('Elena Pascual Ramon','95378435D','842679134975'),
-('Pedro Benito Gil','88560248H','002549678542'),
-('Paula Gomez Garcia','77804562L','234512567216'),
+VALUES ('Felipe Perez Garcia','89652418M','56984231457'),
+('Alejandro Ubeda Miralles','54216874B','75423654874'),
+('Angel Riquelme Armando','65247856L','58423178965'),
+('Maria Garcia Hernández','78056945L','63215975464'),
+('Elena Pascual Ramon','95378435D','84267913497'),
+('Pedro Benito Gil','88560248H','00254967854'),
+('Paula Gomez Garcia','77804562L','23451256721'),
 ('Javier Berenguer Manzanera','60315950M','800235478951'),
 ('Jennifer Leal Blanc','54655802A','220354786542'),
-('Ferran Villa Capdevila','96542302N','584200876423'),
-('Marina Torres Gil','69366501L','500478635665'),
-('Gervasio Ubeda Guil','52687412K','854268741256'),
-('Evaristo Garrote Fino','54345871G','658741259874'),
-('Juan Carlos Borbon','75982564R','794613258465');
+('Ferran Villa Capdevila','96542302N','58420087642'),
+('Marina Torres Gil','69366501L','50047863566'),
+('Gervasio Ubeda Guil','52687412K','85426874125'),
+('Evaristo Garrote Fino','54345871G','65874125987'),
+('Juan Carlos Borbon','75982564R','79461325846');
 
 
 
