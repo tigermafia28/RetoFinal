@@ -110,7 +110,7 @@ VALUES ('CocaCola','H85423645','Calle Severo Ochoa','01521486315'),
 ('Tarradellas','P83765412','Calle Espetec','52148963574'),
 ('Heavy Metal','G74582359','Calle Abeja','74698214598'),
 ('Asero pesado','E98734021','Calle Hacendado','47201698031'),
-('Brugal','H934023459','Calle Concola','12874596325');
+('Brugal','H93402345','Calle Concola','12874596325');
 
 INSERT INTO trabaja(CodTra,CodEmp,Convenio,GrupoCot,CatProf,TipoContrato,FecInTra,FecSalTra)
 VALUES ('1','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','2','Titulado Medio','INDEFINIDO','1999-02-08',NULL),
