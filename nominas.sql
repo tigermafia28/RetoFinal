@@ -31,7 +31,7 @@ CREATE TABLE trabaja(
 	FecSalTra DATE,
 	PRIMARY KEY(CodTra,CodEmp),
 	CONSTRAINT fk_tra_traemp FOREIGN KEY(CodTra)
-	REFERENCES trabajador(CodTra) ON UPDATE CASCADE,
+	REFERENCES trabajador(id) ON UPDATE CASCADE,
 	CONSTRAINT fk_emp_traemp FOREIGN KEY(CodEmp)
 	REFERENCES empresa(CodEmp) ON UPDATE CASCADE
 );	
@@ -65,7 +65,7 @@ CREATE TABLE nomina(
 	BHEFM DECIMAL(10,2),
 	PRIMARY KEY(CodNom,CodTra),
 	CONSTRAINT fk_tra_nom FOREIGN KEY(CodTra)
-	REFERENCES trabajador(CodTra) ON UPDATE CASCADE
+	REFERENCES trabajador(id) ON UPDATE CASCADE
 );
 
 CREATE TABLE horas(
@@ -77,7 +77,7 @@ CREATE TABLE horas(
 	N_DiasTrab INT(11),
 	PRIMARY KEY(CodTra,CodEmp,MesAnyo),
 	CONSTRAINT fk_tra_hor FOREIGN KEY(CodTra)
-	REFERENCES trabajador(CodTra) ON UPDATE CASCADE,
+	REFERENCES trabajador(id) ON UPDATE CASCADE,
 	CONSTRAINT fk_emp_hor FOREIGN KEY(CodEmp)
 	REFERENCES empresa(CodEmp) ON UPDATE CASCADE
 );
