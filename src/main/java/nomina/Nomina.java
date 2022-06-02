@@ -79,7 +79,7 @@ public class Nomina {
 		salarioMensual = salarioAnual / (12 + nPagasExtra);
 		salarioPorHora = salarioMensual / 30 / 8;
 		salarioBase = salarioPorHora * nHorasDiarias * totalDias;
-		horasExtra = salarioAnual / jornadaAnual * (1 + datos.porcentajeHorasExtra / 100);
+		horasExtra = nHorasExtra * (salarioAnual / jornadaAnual * (1 + datos.porcentajeHorasExtra / 100));
 
 		pagaExtra = 0;
 		if(datos.prorrateado)
@@ -91,13 +91,15 @@ public class Nomina {
 		totalPlusesNoSalariales = 0;
 
 		for(int i = 0; i < datos.pluses.length; i++) {
-			if (datos.pluses[i].salarial) {
-				plusesSalariales[i] = datos.pluses[i];
-				totalPlusesSalariales += datos.pluses[i].cantidad;
-			}
-			else {
-				plusesNoSalariales[i] = datos.pluses[i];
-				totalPlusesNoSalariales += datos.pluses[i].cantidad;
+			if (datos.pluses[i] != null) {
+				if (datos.pluses[i].salarial) {
+					plusesSalariales[i] = datos.pluses[i];
+					totalPlusesSalariales += datos.pluses[i].cantidad;
+				}
+				else {
+					plusesNoSalariales[i] = datos.pluses[i];
+					totalPlusesNoSalariales += datos.pluses[i].cantidad;
+				}
 			}
 		}
 
@@ -107,12 +109,12 @@ public class Nomina {
 		bccp = bccc + horasExtra;
 		bhe = horasExtra;
 
-		contingenciasComunes = 4.7f * bccc;
-		desempleo = 1.55f * bccp;
+		contingenciasComunes = 0.047f * bccc;
+		desempleo = 0.0155f * bccp;
 		if(datos.contrato == Contrato.TEMPORAL)
-			desempleo = 1.6f * bccp;
-		fp = 0.1f * bccp;
-		aportacionesHorasExtra = 4.7f * bhe;
+			desempleo = 0.016f * bccp;
+		fp = 0.001f * bccp;
+		aportacionesHorasExtra = 0.047f * bhe;
 
 		totalAportaciones = contingenciasComunes + desempleo + fp + aportacionesHorasExtra;
 
@@ -122,13 +124,14 @@ public class Nomina {
 
 		neto = totalDevengado - totalADeducir;
 
-		contingenciasComunesEmpresa = 23.6f * bccc;
+		contingenciasComunesEmpresa = 0.236f * bccc;
 		atep = bccp * (datos.porcentajeAtep / 100);
-		desempleoEmpresa = 5.5f * bccp;
+		desempleoEmpresa = 0.055f * bccp;
 		if(datos.contrato == Contrato.TEMPORAL)
-			desempleoEmpresa = 6.7f * bccp;
-		fpEmpresa = 0.6f * bccp;
-		cotizacionHorasExtra = 23.6f * bhe;
+			desempleoEmpresa = 0.067f * bccp;
+		fpEmpresa = 0.006f * bccp;
+		fogasa = 0.002f * bccp;
+		cotizacionHorasExtra = 0.236f * bhe;
 
 	}
 }

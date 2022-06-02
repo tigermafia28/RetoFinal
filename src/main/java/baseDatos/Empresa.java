@@ -1,4 +1,4 @@
-package leerXML.clases;
+package baseDatos;
 
 public class Empresa {
 	//public long id;

@@ -10,11 +10,14 @@ import leerXML.clases.Convenio;
 import leerXML.clases.Grupo;
 import leerXML.clases.Plus;
 import leerXML.enums.Ambito;
+import static leerXML.enums.Contrato.*;
 import leerXML.enums.Retribucion;
+import nomina.Nomina;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import utilidades.Datos;
 
 public class LeerXML {
 	
@@ -215,6 +218,24 @@ public class LeerXML {
 			}
 		}
 		*/
+		
+		Datos datos = new Datos();
+		datos.diaInicio = 1;
+		datos.diaFinal = 30;
+		datos.nHorasDiarias = 8;
+		datos.nHorasExtra = 0;
+		datos.salarioAnual = 26400.00f;
+		datos.nPagasExtra = 3;
+		datos.jornadaAnual = 1790;
+		datos.irpf = 12f;
+		datos.porcentajeHorasExtra = 50f;
+		datos.porcentajeAtep = 1.6f;
+		datos.prorrateado = true;
+		datos.contrato = INDEFINIDO;
+		datos.pluses = new Plus[1024];
+		
+		Nomina nomina = new Nomina(datos);
+		System.out.println("ole");
 	}
 	
 }

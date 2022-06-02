@@ -1,4 +1,4 @@
-package leerXML.clases;
+package baseDatos;
 
 import leerXML.enums.Contrato;
 
