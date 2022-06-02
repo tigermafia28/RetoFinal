@@ -1,16 +1,16 @@
-package jo.udk.leerxml;
+package leerXML;
 
 import java.io.File;
 import java.io.IOException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import jo.udk.leerxml.clases.Categoria;
-import jo.udk.leerxml.clases.Convenio;
-import jo.udk.leerxml.clases.Grupo;
-import jo.udk.leerxml.clases.Plus;
-import jo.udk.leerxml.enums.Ambito;
-import jo.udk.leerxml.enums.Retribucion;
+import leerXML.clases.Categoria;
+import leerXML.clases.Convenio;
+import leerXML.clases.Grupo;
+import leerXML.clases.Plus;
+import leerXML.enums.Ambito;
+import leerXML.enums.Retribucion;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

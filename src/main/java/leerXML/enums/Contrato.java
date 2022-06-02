@@ -1,4 +1,4 @@
-package jo.udk.leerxml.enums;
+package leerXML.enums;
 
 public enum Contrato {
 	TEMPORAL,

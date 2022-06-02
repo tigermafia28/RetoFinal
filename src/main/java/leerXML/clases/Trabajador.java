@@ -1,6 +1,6 @@
-package jo.udk.leerxml.clases;
+package leerXML.clases;
 
-import jo.udk.leerxml.enums.Contrato;
+import leerXML.enums.Contrato;
 
 public class Trabajador {
 	//public long id;

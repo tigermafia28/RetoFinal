@@ -1,4 +1,4 @@
-package jo.udk.leerxml.clases;
+package leerXML.clases;
 
 public class Categoria {
 	public String nivel;

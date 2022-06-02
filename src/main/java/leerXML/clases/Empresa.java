@@ -1,4 +1,4 @@
-package jo.udk.leerxml.clases;
+package leerXML.clases;
 
 public class Empresa {
 	//public long id;
