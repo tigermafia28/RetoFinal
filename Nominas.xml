@@ -178,32 +178,44 @@
 					<nombre>Ayuda especial</nombre>
 					<cantidad>119.60</cantidad>
 					<retribucion>Mensual</retribucion>
+					<percepcion>Salarial</percepcion>
 				</plus>
 				
 				<plus>
 					<nombre>Plus de transporte</nombre>
 					<cantidad>2.49</cantidad>
 					<retribucion>Kilometrica</retribucion>
+					<percepcion>Salarial</percepcion>
 				</plus>
 				
 				<plus>
 					<nombre>Plus de teletrabajo</nombre>
 					<cantidad>2.49</cantidad>
 					<retribucion>Diaria</retribucion>
+					<percepcion>Salarial</percepcion>
 				</plus>
 				
 				<plus>
 					<nombre>Dieta media</nombre>
 					<cantidad>19.20</cantidad>
 					<retribucion>Diaria</retribucion>
+					<percepcion>No_Salarial</percepcion>
 				</plus>
 				
 				<plus>
 					<nombre>Dieta completa</nombre>
 					<cantidad>56.48</cantidad>
 					<retribucion>Diaria</retribucion>
+					<percepcion>No_Salarial</percepcion>
 				</plus>
 			</pluses>
+			
+			<pagasextra>3</pagasextra>
+			<jornadaanual>1790</jornadaanual>
+			<porcentajes>
+				<horasextra>150</horasextra>
+				<atep>1.6</atep>
+			</porcentajes>
 		</convenio>
 		
 		
@@ -383,32 +395,44 @@
 					<nombre>Ayuda especial</nombre>
 					<cantidad>122.00</cantidad>
 					<retribucion>Mensual</retribucion>
+					<percepcion>Salarial</percepcion>
 				</plus>
 				
 				<plus>
 					<nombre>Plus de transporte</nombre>
 					<cantidad>2.54</cantidad>
 					<retribucion>Kilometrica</retribucion>
+					<percepcion>Salarial</percepcion>
 				</plus>
 				
 				<plus>
 					<nombre>Plus de teletrabajo</nombre>
 					<cantidad>2.54</cantidad>
 					<retribucion>Diaria</retribucion>
+					<percepcion>Salarial</percepcion>
 				</plus>
 				
 				<plus>
 					<nombre>Dieta media</nombre>
 					<cantidad>19.58</cantidad>
 					<retribucion>Diaria</retribucion>
+					<percepcion>No_Salarial</percepcion>
 				</plus>
 				
 				<plus>
 					<nombre>Dieta completa</nombre>
 					<cantidad>57.61</cantidad>
 					<retribucion>Diaria</retribucion>
+					<percepcion>No_Salarial</percepcion>
 				</plus>
 			</pluses>
+			
+			<pagasextra>3</pagasextra>
+			<jornadaanual>1790</jornadaanual>
+			<porcentajes>
+				<horasextra>150</horasextra>
+				<atep>1.6</atep>
+			</porcentajes>
 		
 		</convenio>
 		
@@ -426,6 +450,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.57</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 					</niveles>
@@ -441,6 +466,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.57</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 						
@@ -457,6 +483,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.82</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 						
@@ -467,6 +494,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.82</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 						
@@ -477,6 +505,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.82</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 					</niveles>
@@ -493,6 +522,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.82</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 						
@@ -503,6 +533,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.82</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 						<nivel numeronivel="3">
@@ -512,6 +543,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.64</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 					
@@ -528,6 +560,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>6.02</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 						
@@ -538,6 +571,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>6.02</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 					</niveles>
@@ -553,6 +587,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.98</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 						
@@ -563,6 +598,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.84</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 					</niveles>
@@ -576,6 +612,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.84</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 						
@@ -586,6 +623,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>5.77</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 					</niveles>
@@ -599,6 +637,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>4.18</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 
@@ -609,6 +648,7 @@
 								<nombre>Plus de Carencia de Incentivos</nombre>
 								<cantidad>4.46</cantidad>
 								<retribucion>Diaria</retribucion>
+								<percepcion>Salarial</percepcion>
 							</plus>
 						</nivel>
 
@@ -623,12 +663,21 @@
 					<nombre>Plus de transporte</nombre>
 					<cantidad>0.38</cantidad>
 					<retribucion>Kilometrica</retribucion>
+					<percepcion>Salarial</percepcion>
 				</plus>
 			</pluses>
+			
+			<pagasextra>2</pagasextra>
+			<jornadaanual>1752</jornadaanual>
+			<porcentajes>
+				<horasextra>175</horasextra>
+				<atep>5.2</atep>
+			</porcentajes>
 		
 		</convenio>
 	</convenios>
-			
+	
+<!--			
 			<tipos_contrato>
 				<modalidades>
 					<modalidad nombre="Formativos">
@@ -651,6 +700,6 @@
 					</modalidad>
 				</modalidades>
 			</tipos_contrato>
-
+-->
 
 </nominas>

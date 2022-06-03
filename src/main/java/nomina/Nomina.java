@@ -1,7 +1,8 @@
 package nomina;
 
 import leerXML.clases.Plus;
-import leerXML.enums.Contrato;
+import static leerXML.enums.Contrato.*;
+import static leerXML.enums.Percepcion.*;
 import utilidades.Datos;
 
 public class Nomina {
@@ -31,7 +32,7 @@ public class Nomina {
 	public Plus[] plusesNoSalariales;
 	public float totalPlusesNoSalariales;
 
-	public float totalDevengado; // Salario base + pagaExtra + pluses
+	public float totalDevengado; // Salario base + pagaExtra + pluses + horas extra
 
 	//Deducciones
 	//Aportaciones
@@ -79,7 +80,7 @@ public class Nomina {
 		salarioMensual = salarioAnual / (12 + nPagasExtra);
 		salarioPorHora = salarioMensual / 30 / 8;
 		salarioBase = salarioPorHora * nHorasDiarias * totalDias;
-		horasExtra = nHorasExtra * (salarioAnual / jornadaAnual * (1 + datos.porcentajeHorasExtra / 100));
+		horasExtra = nHorasExtra * (salarioAnual / jornadaAnual * (datos.porcentajeHorasExtra / 100));
 
 		pagaExtra = 0;
 		if(datos.prorrateado)
@@ -92,7 +93,7 @@ public class Nomina {
 
 		for(int i = 0; i < datos.pluses.length; i++) {
 			if (datos.pluses[i] != null) {
-				if (datos.pluses[i].salarial) {
+				if (datos.pluses[i].percepcion == SALARIAL) {
 					plusesSalariales[i] = datos.pluses[i];
 					totalPlusesSalariales += datos.pluses[i].cantidad;
 				}
@@ -103,7 +104,7 @@ public class Nomina {
 			}
 		}
 
-		totalDevengado = salarioBase + pagaExtra + totalPlusesSalariales + totalPlusesNoSalariales;
+		totalDevengado = salarioBase + pagaExtra + totalPlusesSalariales + totalPlusesNoSalariales + horasExtra;
 
 		bccc = salarioBase + pagaExtra + totalPlusesSalariales;
 		bccp = bccc + horasExtra;
@@ -111,7 +112,7 @@ public class Nomina {
 
 		contingenciasComunes = 0.047f * bccc;
 		desempleo = 0.0155f * bccp;
-		if(datos.contrato == Contrato.TEMPORAL)
+		if(datos.contrato == TEMPORAL)
 			desempleo = 0.016f * bccp;
 		fp = 0.001f * bccp;
 		aportacionesHorasExtra = 0.047f * bhe;
@@ -127,7 +128,7 @@ public class Nomina {
 		contingenciasComunesEmpresa = 0.236f * bccc;
 		atep = bccp * (datos.porcentajeAtep / 100);
 		desempleoEmpresa = 0.055f * bccp;
-		if(datos.contrato == Contrato.TEMPORAL)
+		if(datos.contrato == TEMPORAL)
 			desempleoEmpresa = 0.067f * bccp;
 		fpEmpresa = 0.006f * bccp;
 		fogasa = 0.002f * bccp;

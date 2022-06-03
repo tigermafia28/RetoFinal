@@ -9,8 +9,9 @@ import leerXML.clases.Categoria;
 import leerXML.clases.Convenio;
 import leerXML.clases.Grupo;
 import leerXML.clases.Plus;
-import leerXML.enums.Ambito;
+import static leerXML.enums.Ambito.*;
 import static leerXML.enums.Contrato.*;
+import leerXML.enums.Percepcion;
 import leerXML.enums.Retribucion;
 import nomina.Nomina;
 import org.w3c.dom.Element;
@@ -76,7 +77,8 @@ public class LeerXML {
 								plus.nombre = elementoPlus.getElementsByTagName("nombre").item(0).getTextContent();
 								plus.cantidad = Float.parseFloat(elementoPlus.getElementsByTagName("cantidad").item(0).getTextContent());
 								plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
-								plus.ambito = Ambito.ESPECIFICO;
+								plus.percepcion = Percepcion.valueOf(elementoPlus.getElementsByTagName("percepcion").item(0).getTextContent().toUpperCase());
+								plus.ambito = ESPECIFICO;
 
 								pluses[indicePlus] = plus;
 							}
@@ -110,8 +112,10 @@ public class LeerXML {
 										plus.nombre = elementoPlus.getElementsByTagName("nombre").item(0).getTextContent();
 										plus.cantidad = Float.parseFloat(elementoPlus.getElementsByTagName("cantidad").item(0).getTextContent());
 										plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
-										plus.ambito = Ambito.ESPECIFICO;
-
+										plus.percepcion = Percepcion.valueOf(elementoPlus.getElementsByTagName("percepcion").item(0).getTextContent().toUpperCase());
+										plus.ambito = ESPECIFICO;
+										
+										
 										pluses[indicePlus] = plus;
 									}
 								}
@@ -152,7 +156,8 @@ public class LeerXML {
 						plus.nombre = elementoPlus.getElementsByTagName("nombre").item(0).getTextContent();
 						plus.cantidad = Float.parseFloat(elementoPlus.getElementsByTagName("cantidad").item(0).getTextContent());
 						plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
-						plus.ambito = Ambito.GENERAL;
+						plus.percepcion = Percepcion.valueOf(elementoPlus.getElementsByTagName("percepcion").item(0).getTextContent().toUpperCase());
+						plus.ambito = GENERAL;
 
 						pluses[indicePlus] = plus;
 					}
@@ -163,6 +168,10 @@ public class LeerXML {
 				convenio.fecha = Integer.parseInt(elementoConvenio.getAttribute("fecha"));
 				convenio.grupos = grup;
 				convenio.pluses = pluses;
+				convenio.nPagasExtra = Integer.parseInt(elementoConvenio.getElementsByTagName("pagasextra").item(0).getTextContent());
+				convenio.jornadaAnual = Integer.parseInt(elementoConvenio.getElementsByTagName("jornadaanual").item(0).getTextContent());
+				convenio.porcentajeHorasExtra = Float.parseFloat(elementoConvenio.getElementsByTagName("horasextra").item(0).getTextContent());
+				convenio.porcentajeAtep = Float.parseFloat(elementoConvenio.getElementsByTagName("atep").item(0).getTextContent());
 				
 				listaConvenios[indiceConv] = convenio;
 			}
@@ -175,10 +184,11 @@ public class LeerXML {
     }
 
 	public static void main(String[] args){
-		/*String nombre = "Nominas.xml";
+		String nombre = "Nominas.xml";
 		File xml = new File(nombre);
 		Convenio[] convenios = getXMLContent(xml);
 		
+		/*
 		for(Convenio conv : convenios){
 			if(conv != null){
 				System.out.println(conv.nombre + " " + conv.fecha);
@@ -197,6 +207,7 @@ public class LeerXML {
 											System.out.println("\t\t\t\t" + plus.nombre);
 											System.out.println("\t\t\t\t\t Ámbito: " + plus.ambito.name().toLowerCase());
 											System.out.println("\t\t\t\t\t Retribución: " + plus.retribucion.name().toLowerCase());
+											System.out.println("\t\t\t\t\t Percepción: " + plus.percepcion.name().toLowerCase());
 											System.out.println("\t\t\t\t\t Cantidad: " + plus.cantidad);
 										}
 									}
@@ -211,24 +222,30 @@ public class LeerXML {
 						System.out.println("\t\t" + plus.nombre);
 						System.out.println("\t\t\t Ámbito: " + plus.ambito.name().toLowerCase());
 						System.out.println("\t\t\t Retribución: " + plus.retribucion.name().toLowerCase());
+						System.out.println("\t\t\t Percepción: " + plus.percepcion.name().toLowerCase());
 						System.out.println("\t\t\t Cantidad: " + plus.cantidad);
 					}
 				}
+				System.out.println("\t Número de pagas extra: " + conv.nPagasExtra);
+				System.out.println("\t Jornada anual: " + conv.jornadaAnual);
+				System.out.println("\t Porcentaje horas extra: " + conv.porcentajeHorasExtra);
+				System.out.println("\t Porcentaje AT/EP: " + conv.porcentajeAtep);
 				System.out.println();
 			}
 		}
 		*/
 		
+		
 		Datos datos = new Datos();
 		datos.diaInicio = 1;
 		datos.diaFinal = 30;
 		datos.nHorasDiarias = 8;
-		datos.nHorasExtra = 0;
+		datos.nHorasExtra = 15;
 		datos.salarioAnual = 26400.00f;
 		datos.nPagasExtra = 3;
 		datos.jornadaAnual = 1790;
 		datos.irpf = 12f;
-		datos.porcentajeHorasExtra = 50f;
+		datos.porcentajeHorasExtra = 150f;
 		datos.porcentajeAtep = 1.6f;
 		datos.prorrateado = true;
 		datos.contrato = INDEFINIDO;
@@ -236,6 +253,7 @@ public class LeerXML {
 		
 		Nomina nomina = new Nomina(datos);
 		System.out.println("ole");
+		
 	}
 	
 }
