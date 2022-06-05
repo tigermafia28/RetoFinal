@@ -5,6 +5,8 @@ import java.io.IOException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+
+import baseDatos.PlusBD;
 import leerXML.clases.Categoria;
 import leerXML.clases.Convenio;
 import leerXML.clases.Grupo;
@@ -19,6 +21,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import utilidades.Datos;
+import utilidades.Util;
 
 public class LeerXML {
 	
@@ -202,7 +205,7 @@ public class LeerXML {
 								System.out.println("\t\t\t" + cat.salario);
 								if(cat.pluses[0] != null) {
 									System.out.println("\t\t\tPluses");
-									for (Plus plus : cat.pluses) {
+									for (PlusBD plus : cat.pluses) {
 										if (plus != null) {
 											System.out.println("\t\t\t\t" + plus.nombre);
 											System.out.println("\t\t\t\t\t Ámbito: " + plus.ambito.name().toLowerCase());
@@ -217,7 +220,7 @@ public class LeerXML {
 					}
 				}
 				System.out.println("\tPluses");
-				for(Plus plus : conv.pluses){
+				for(PlusBD plus : conv.pluses){
 					if(plus != null){
 						System.out.println("\t\t" + plus.nombre);
 						System.out.println("\t\t\t Ámbito: " + plus.ambito.name().toLowerCase());
@@ -234,24 +237,35 @@ public class LeerXML {
 			}
 		}
 		*/
-		
-		
+
+		PlusBD[] plusesBD = new PlusBD[1024];
+		PlusBD plusBD = new PlusBD();
+		plusBD.nombre = "Plus de transporte";
+		plusBD.valor = 30;
+
+		PlusBD plusBD2 = new PlusBD();
+		plusBD2.nombre = "Dieta media";
+		plusBD2.valor = 30;
+
+		plusesBD[0] = plusBD;
+		plusesBD[1] = plusBD2;
+
 		Datos datos = new Datos();
-		datos.diaInicio = 1;
-		datos.diaFinal = 30;
-		datos.nHorasDiarias = 8;
-		datos.nHorasExtra = 15;
-		datos.salarioAnual = 26400.00f;
-		datos.nPagasExtra = 3;
-		datos.jornadaAnual = 1790;
-		datos.irpf = 12f;
-		datos.porcentajeHorasExtra = 150f;
-		datos.porcentajeAtep = 1.6f;
-		datos.prorrateado = true;
-		datos.contrato = INDEFINIDO;
-		datos.pluses = new Plus[1024];
+		datos.diaInicio = 1; //bd
+		datos.diaFinal = 30; //bd
+		datos.nHorasDiarias = 8; //bd
+		datos.nHorasExtra = 0; //bd
+		datos.salarioAnual = convenios[0].grupos[1].categorias[0].salario; //xml, categoria
+		datos.nPagasExtra = convenios[0].nPagasExtra; //xml, convenio
+		datos.jornadaAnual = convenios[0].jornadaAnual; //xml, convenio
+		datos.irpf = 2f; //bd o 12% ?
+		datos.porcentajeHorasExtra = convenios[0].porcentajeHorasExtra; //xml, convenio
+		datos.porcentajeAtep = convenios[0].porcentajeAtep; //xml, convenio
+		datos.prorrateado = true; //bd
+		datos.contrato = INDEFINIDO; //bd
+		datos.pluses = Util.calculaPluses(convenios[0].pluses, plusesBD); //bd? + xml
 		
-		Nomina nomina = new Nomina(datos);
+		Nomina nomina = Util.calculaNomina(datos);
 		System.out.println("ole");
 		
 	}

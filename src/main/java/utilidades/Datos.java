@@ -24,5 +24,5 @@ public class Datos {
 	public float porcentajeAtep;
 	public boolean prorrateado;
 	public Contrato contrato;
-	public Plus[] pluses;
+	public PlusCalculado[] pluses;
 }

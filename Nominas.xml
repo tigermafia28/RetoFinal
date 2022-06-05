@@ -184,7 +184,7 @@
 				<plus>
 					<nombre>Plus de transporte</nombre>
 					<cantidad>2.49</cantidad>
-					<retribucion>Kilometrica</retribucion>
+					<retribucion>Diaria</retribucion>
 					<percepcion>Salarial</percepcion>
 				</plus>
 				
@@ -401,7 +401,7 @@
 				<plus>
 					<nombre>Plus de transporte</nombre>
 					<cantidad>2.54</cantidad>
-					<retribucion>Kilometrica</retribucion>
+					<retribucion>Diaria</retribucion>
 					<percepcion>Salarial</percepcion>
 				</plus>
 				
@@ -662,7 +662,7 @@
 				<plus>
 					<nombre>Plus de transporte</nombre>
 					<cantidad>0.38</cantidad>
-					<retribucion>Kilometrica</retribucion>
+					<retribucion>Diaria</retribucion>
 					<percepcion>Salarial</percepcion>
 				</plus>
 			</pluses>

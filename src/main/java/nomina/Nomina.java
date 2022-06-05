@@ -4,6 +4,7 @@ import leerXML.clases.Plus;
 import static leerXML.enums.Contrato.*;
 import static leerXML.enums.Percepcion.*;
 import utilidades.Datos;
+import utilidades.PlusCalculado;
 
 public class Nomina {
 
@@ -27,9 +28,9 @@ public class Nomina {
 	public float horasExtra; // (Salario bruto anual / número de pagas(12 + extra)) * porcentaje de aumento horas extra
 
 	// Pluses
-	public Plus[] plusesSalariales;
+	public PlusCalculado[] plusesSalariales;
 	public float totalPlusesSalariales;
-	public Plus[] plusesNoSalariales;
+	public PlusCalculado[] plusesNoSalariales;
 	public float totalPlusesNoSalariales;
 
 	public float totalDevengado; // Salario base + pagaExtra + pluses + horas extra
@@ -65,7 +66,7 @@ public class Nomina {
 
 
 	// Constructores
-
+/*
 	public Nomina(Datos datos){
 		diaInicio = datos.diaInicio;
 		diaFinal = datos.diaFinal;
@@ -135,4 +136,6 @@ public class Nomina {
 		cotizacionHorasExtra = 0.236f * bhe;
 
 	}
+	*/
+
 }
