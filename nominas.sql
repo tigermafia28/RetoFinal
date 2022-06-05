@@ -57,6 +57,7 @@ CREATE TABLE recibe(
 	idtrabajador INT(11),
 	idplus INT(11),
 	valor DECIMAL(10,2) NOT NULL,
+	mesanyo VARCHAR(7) NOT NULL,
 	PRIMARY KEY(idtrabajador, idplus),
 	CONSTRAINT id_tra_plu_t FOREIGN KEY(idtrabajador)
 	REFERENCES trabajador(id) ON UPDATE CASCADE,
