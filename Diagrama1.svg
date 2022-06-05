@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="45cm" height="24cm" viewBox="1192 108 887 473" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="1368.69" y="349.918" width="105" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1368.69" y="349.918" width="105" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1421.19" y="371.799">TRABAJADOR</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1821.03" y="233.946" width="74.2" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1821.03" y="233.946" width="74.2" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1858.13" y="255.827">PUESTO</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1846.18" y="473.054" width="74.2" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1846.18" y="473.054" width="74.2" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1883.28" y="494.935">NOMINA</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1391.69" y="170.918" width="58.8" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1391.69" y="170.918" width="58.8" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1421.09" y="192.8">PLUS</text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="1599.69,252.088 1646.64,223.918 1693.59,252.088 1646.64,280.258 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1599.69,252.088 1646.64,223.918 1693.59,252.088 1646.64,280.258 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="1593.69" y="246.088">1,n</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1699.59" y="246.088">1,n</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1646.64" y="255.969">trabaja</text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1473.69,367.918 1536.69,367.918 1536.69,252.088 1599.69,252.088 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1693.59,252.088 1757.31,252.088 1757.31,251.946 1821.03,251.946 "/>
+  <g>
+    <polygon style="fill: #ffffff" points="1599.58,490.732 1638.83,467.182 1678.08,490.732 1638.83,514.282 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1599.58,490.732 1638.83,467.182 1678.08,490.732 1638.83,514.282 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="1593.58" y="484.732">1,1</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1684.08" y="484.732">1,n</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1638.83" y="494.613">tiene</text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1473.69,367.918 1536.63,367.918 1536.63,490.732 1599.58,490.732 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1678.08,490.732 1762.13,490.732 1762.13,491.054 1846.18,491.054 "/>
+  <g>
+    <polygon style="fill: #ffffff" points="1378.39,276.012 1421.49,250.152 1464.59,276.012 1421.49,301.872 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1378.39,276.012 1421.49,250.152 1464.59,276.012 1421.49,301.872 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1425.49" y="244.152">0,n</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1425.49" y="323.872">0,n</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1421.49" y="279.893">recibe</text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1421.09,206.918 1421.09,228.535 1421.49,228.535 1421.49,250.152 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1421.49,301.872 1421.49,325.895 1421.19,325.895 1421.19,349.918 "/>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1314.01" cy="145.859" rx="43.1" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1314.01" cy="145.859" rx="43.1" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1314.01" y="149.741">nombre</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1298.48" cy="294.179" rx="39.25" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1298.48" cy="294.179" rx="39.25" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1298.48" y="298.06">valor</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1406" cy="127.624" rx="27.7" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1406" cy="127.624" rx="27.7" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1406" y="131.505">id</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1398.3" y1="135.624" x2="1413.7" y2="135.624"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1344.49" y1="158.587" x2="1391.69" y2="188.918"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1337.73" y1="294.179" x2="1378.39" y2="276.012"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1406" y1="145.624" x2="1421.09" y2="170.918"/>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1230.16" cy="362.854" rx="27.7" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1230.16" cy="362.854" rx="27.7" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1230.16" y="366.735">id</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1222.46" y1="370.854" x2="1237.86" y2="370.854"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1236.29" cy="413.018" rx="43.1" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1236.29" cy="413.018" rx="43.1" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1236.29" y="416.899">nombre</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1280.9" cy="465.362" rx="31.55" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1280.9" cy="465.362" rx="31.55" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1280.9" y="469.243">nif</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1328.95" cy="511.162" rx="39.25" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1328.95" cy="511.162" rx="39.25" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1328.95" y="515.043">nafss</text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1259.17" y1="361.212" x2="1368.69" y2="367.918"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1279.39" y1="413.018" x2="1368.69" y2="367.918"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1303.21" y1="452.634" x2="1421.19" y2="385.918"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1328.95" y1="493.162" x2="1421.19" y2="385.918"/>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1962.63" cy="140.392" rx="50.8" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1962.63" cy="140.392" rx="50.8" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1962.63" y="144.273">convenio</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1992.04" cy="191.646" rx="46.95" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1992.04" cy="191.646" rx="46.95" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1992.04" y="195.527">catprof</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1779.43" cy="342.136" rx="50.8" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1779.43" cy="342.136" rx="50.8" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1779.43" y="346.017">contrato</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="2001.34" cy="249.442" rx="50.8" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="2001.34" cy="249.442" rx="50.8" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="2001.34" y="253.323">grupocot</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1695.46" cy="156.204" rx="50.8" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1695.46" cy="156.204" rx="50.8" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1695.46" y="160.086">prorrata</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1866.47" cy="168.745" rx="27.7" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1866.47" cy="168.745" rx="27.7" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1866.47" y="172.626">id</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1858.77" y1="176.745" x2="1874.17" y2="176.745"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1541.05" cy="196.008" rx="39.25" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1541.05" cy="196.008" rx="39.25" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1541.05" y="199.889">horas</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1755.5" cy="197.098" rx="58.5" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1755.5" cy="197.098" rx="58.5" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1755.5" y="200.979">horasextra</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1595.71" cy="321.416" rx="54.65" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1595.71" cy="321.416" rx="54.65" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1595.71" y="325.297">diainicio</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1787.61" cy="299.06" rx="50.8" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1787.61" cy="299.06" rx="50.8" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1787.61" y="302.941">diafinal</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1679.61" cy="353.586" rx="46.95" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1679.61" cy="353.586" rx="46.95" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1679.61" cy="353.586" rx="38.95" ry="14"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1679.61" y="357.467">mesanyo</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1998.42" cy="386.274" rx="27.7" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1998.42" cy="386.274" rx="27.7" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1998.42" y="390.155">id</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1990.72" y1="394.274" x2="2006.12" y2="394.274"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="2019.13" cy="444.256" rx="46.95" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="2019.13" cy="444.256" rx="46.95" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="2019.13" y="448.137">rutapdf</text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="2023.59" cy="508.328" rx="46.95" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="2023.59" cy="508.328" rx="46.95" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="2023.59" y="512.209">rutaxml</text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1595.71" y1="303.416" x2="1623.16" y2="266.174"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1679.61" y1="335.586" x2="1646.64" y2="280.258"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1787.61" y1="281.06" x2="1670.11" y2="266.174"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1568.81" y1="208.736" x2="1623.16" y2="238.004"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1755.5" y1="215.098" x2="1670.11" y2="238.004"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1920.38" y1="491.054" x2="1970.72" y2="386.274"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1920.38" y1="491.054" x2="1972.18" y2="444.256"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1976.64" y1="508.328" x2="1920.38" y2="491.054"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1866.47" y1="186.745" x2="1858.13" y2="233.946"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1926.71" y1="153.12" x2="1858.13" y2="233.946"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1945.09" y1="191.646" x2="1858.13" y2="233.946"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1950.54" y1="249.442" x2="1895.23" y2="251.946"/>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1597.73" cy="154.492" rx="35.4" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1597.73" cy="154.492" rx="35.4" ry="18"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1597.73" y="158.373">irpf</text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1597.73" y1="172.492" x2="1646.64" y2="223.918"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1695.46" y1="174.204" x2="1646.64" y2="223.918"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1743.51" y1="329.408" x2="1670.11" y2="266.174"/>
+  <g>
+    <ellipse style="fill: #ffffff" cx="2030.95" cy="562" rx="46.95" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="2030.95" cy="562" rx="46.95" ry="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="2030.95" y="565.881">mesanyo</text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1984" y1="562" x2="1920.38" y2="491.054"/>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1285.35" cy="244.924" rx="46.95" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1285.35" cy="244.924" rx="46.95" ry="18"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1285.35" cy="244.924" rx="38.95" ry="14"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1285.35" y="248.805">mesanyo</text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1332.3" y1="244.924" x2="1378.39" y2="276.012"/>
+</svg>
