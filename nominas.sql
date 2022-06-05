@@ -15,8 +15,8 @@ CREATE TABLE trabajador(
 CREATE TABLE puesto(
 	id INT(11) AUTO_INCREMENT PRIMARY KEY,
 	convenio VARCHAR(200) NOT NULL,
-	catprof VARCHAR(5) NOT NULL,
-	grupocot INT(4) NOT NULL
+	categoria VARCHAR(5) NOT NULL,
+	grupo INT(4) NOT NULL
 );
 
 CREATE TABLE nomina(
