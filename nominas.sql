@@ -13,80 +13,98 @@ CREATE TABLE trabajador(
 );
 
 CREATE TABLE empresa(
-	CodEmp INT(11) AUTO_INCREMENT PRIMARY KEY,
-	NomEmp VARCHAR(50) NOT NULL,
-	CifEmp VARCHAR(9) NOT NULL UNIQUE,
-	DirEmp VARCHAR(100),
-	CCCEmp VARCHAR(10000) NOT NULL UNIQUE
+	id INT(11) AUTO_INCREMENT PRIMARY KEY,
+	nomemp VARCHAR(50) NOT NULL,
+	cifemp VARCHAR(9) NOT NULL UNIQUE,
+	diremp VARCHAR(100),
+	cccemp VARCHAR(10000) NOT NULL UNIQUE
 );
 
 CREATE TABLE trabaja(
-	CodTra INT(11),
-	CodEmp INT(11),
-	Convenio VARCHAR(100),
-	GrupoCot VARCHAR(50) NOT NULL,
-	CatProf VARCHAR(100) NOT NULL,
-	TipoContrato ENUM('TEMPORAL','INDEFINIDO') DEFAULT 'INDEFINIDO',
-	FecInTra DATE NOT NULL,
-	FecSalTra DATE,
-	PRIMARY KEY(CodTra,CodEmp),
-	CONSTRAINT fk_tra_traemp FOREIGN KEY(CodTra)
+	codtra INT(11),
+	codemp INT(11),
+	convenio VARCHAR(100),
+	grupocot VARCHAR(50) NOT NULL,
+	catprof VARCHAR(100) NOT NULL,
+	tipocontrato ENUM('TEMPORAL','INDEFINIDO') DEFAULT 'INDEFINIDO',
+	fecintra DATE NOT NULL,
+	fecsaltra DATE,
+	PRIMARY KEY(codtra,codemp),
+	CONSTRAINT fk_tra_traemp FOREIGN KEY(codtra)
 	REFERENCES trabajador(id) ON UPDATE CASCADE,
-	CONSTRAINT fk_emp_traemp FOREIGN KEY(CodEmp)
-	REFERENCES empresa(CodEmp) ON UPDATE CASCADE
+	CONSTRAINT fk_emp_traemp FOREIGN KEY(codemp)
+	REFERENCES empresa(id) ON UPDATE CASCADE
 );	
 
 CREATE TABLE nomina(
-	CodNom INT(11) AUTO_INCREMENT,
-	CodTra INT(11),
-	SalBase DECIMAL(10,2) NOT NULL,
-	Prorrata DECIMAL(10,2),
-	AyudaEsp DECIMAL(10,2),
-	PlusTrans DECIMAL(10,2),
-	PlusTele DECIMAL(10,2),
-	DietaMed DECIMAL(10,2),
-	DietaComp DECIMAL(10,2),
-	TotalDev DECIMAL(10,2),
-	ContCom DECIMAL(10,2),
-	Desempleo DECIMAL(10,2),
-	FP DECIMAL(10,2),
-	HorasExtraFM DECIMAL(10,2),
-	OtrasHoras DECIMAL(10,2),
-	TotalApor DECIMAL(10,2),
-	IRPF DECIMAL(10,2),
-	Anticipo DECIMAL(10,2),
-	ValorEspecie DECIMAL(10,2),
-	OtrasDed DECIMAL(10,2),
-	TotalDed DECIMAL(10,2),
-	Neto DECIMAL(10,2),
-	BCCC DECIMAL(10,2),
-	BCCP DECIMAL(10,2),
-	BHE DECIMAL(10,2),
-	BHEFM DECIMAL(10,2),
-	PRIMARY KEY(CodNom,CodTra),
-	CONSTRAINT fk_tra_nom FOREIGN KEY(CodTra)
+	id INT(11) AUTO_INCREMENT,
+	codtra INT(11),
+	salbase DECIMAL(10,2) NOT NULL,
+	prorrata DECIMAL(10,2),
+	ayudaesp DECIMAL(10,2),
+	plustrans DECIMAL(10,2),
+	plustele DECIMAL(10,2),
+	dietamed DECIMAL(10,2),
+	dietacomp DECIMAL(10,2),
+	totaldev DECIMAL(10,2),
+	contcom DECIMAL(10,2),
+	desempleo DECIMAL(10,2),
+	fp DECIMAL(10,2),
+	horasextrafm DECIMAL(10,2),
+	otrashoras DECIMAL(10,2),
+	totalapor DECIMAL(10,2),
+	irpf DECIMAL(10,2),
+	anticipo DECIMAL(10,2),
+	valorespecie DECIMAL(10,2),
+	otrasded DECIMAL(10,2),
+	totalded DECIMAL(10,2),
+	neto DECIMAL(10,2),
+	bccc DECIMAL(10,2),
+	bccp DECIMAL(10,2),
+	bhe DECIMAL(10,2),
+	bhefm DECIMAL(10,2),
+	PRIMARY KEY(id,codtra),
+	CONSTRAINT fk_tra_nom FOREIGN KEY(codtra)
 	REFERENCES trabajador(id) ON UPDATE CASCADE
 );
 
 CREATE TABLE horas(
-	CodTra INT(11),
-	CodEmp INT(11),
-	MesAnyo VARCHAR(7),
-	N_HorasEX INT(3),
-	N_HorasTot INT(11),
-	N_DiasTrab INT(11),
-	PRIMARY KEY(CodTra,CodEmp,MesAnyo),
-	CONSTRAINT fk_tra_hor FOREIGN KEY(CodTra)
+	idtra INT(11),
+	codemp INT(11),
+	mesanyo VARCHAR(7),
+	n_horasex INT(3),
+	n_horastot INT(11),
+	PRIMARY KEY(idtra,codemp,mesanyo),
+	CONSTRAINT fk_tra_hor FOREIGN KEY(idtra)
 	REFERENCES trabajador(id) ON UPDATE CASCADE,
-	CONSTRAINT fk_emp_hor FOREIGN KEY(CodEmp)
-	REFERENCES empresa(CodEmp) ON UPDATE CASCADE
+	CONSTRAINT fk_emp_hor FOREIGN KEY(codemp)
+	REFERENCES empresa(id) ON UPDATE CASCADE
 );
 
-INSERT INTO trabajador(NomTra,NifTra,NafSSTra)
+CREATE TABLE pluses(
+	id INT(11) AUTO_INCREMENT PRIMARY KEY,
+	nombre VARCHAR(50)
+);
+
+CREATE TABLE recibe(
+	id INT(11),
+	codtra INT(11),
+	mesanyo VARCHAR(7),
+	valor Decimal(10,2),
+	PRIMARY KEY(id,codtra,mesanyo),
+	CONSTRAINT fk_pl_re FOREIGN KEY(id)
+	REFERENCES pluses(id) ON UPDATE CASCADE,
+	CONSTRAINT fk_tra_re FOREIGN KEY(codtra)
+	REFERENCES trabajador(id) ON UPDATE CASCADE
+);
+
+
+
+INSERT INTO trabajador(nomtra,niftra,nafsstra)
 VALUES ('Felipe Perez Garcia','89652418M','569842314578'),
 ('Alejandro Ubeda Miralles','54216874B','754236548748'),
 ('Angel Riquelme Armando','65247856L','584231789655'),
-('Maria Garcia Hernández','78056945L','963215975464'),
+('Maria Garcia Hernandez','78056945L','963215975464'),
 ('Elena Pascual Ramon','95378435D','842679134974'),
 ('Pedro Benito Gil','88560248H','002549678548'),
 ('Paula Gomez Garcia','77804562L','234512567213'),
@@ -100,7 +118,7 @@ VALUES ('Felipe Perez Garcia','89652418M','569842314578'),
 
 
 
-INSERT INTO empresa(NomEmp,CifEmp,DirEmp,CCCEmp)
+INSERT INTO empresa(nomemp,cifemp,diremp,cccemp)
 VALUES ('CocaCola','H85423645','Calle Severo Ochoa','01521486315'),
 ('Iberdrola','G52348756','Calle Santa Barbara','52315780145'),
 ('Metales bacanos','M32184623','Calle Azorin','64214895341'),
@@ -112,7 +130,7 @@ VALUES ('CocaCola','H85423645','Calle Severo Ochoa','01521486315'),
 ('Asero pesado','E98734021','Calle Hacendado','47201698031'),
 ('Brugal','H93402345','Calle Concola','12874596325');
 
-INSERT INTO trabaja(CodTra,CodEmp,Convenio,GrupoCot,CatProf,TipoContrato,FecInTra,FecSalTra)
+INSERT INTO trabaja(codtra,codemp,convenio,grupocot,catprof,tipocontrato,fecintra,fecsaltra)
 VALUES ('1','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','2','Titulado Medio','INDEFINIDO','1999-02-08',NULL),
 ('2','6','CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL','1','Analista de sistemas','TEMPORAL','2006-12-22',NULL),
 ('3','4','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','4','Tecnico Analista','TEMPORAL','2003-05-03','2017-02-04'),
@@ -128,3 +146,34 @@ VALUES ('1','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICAN
 ('13','1','CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE','6','Operador de maquinas basica','TEMPORAL','2008-04-11',NULL),
 ('14','9','CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL','7','Vigilante','TEMPORAL','2018-08-09',NULL);
 
+INSERT INTO horas(idtra,codemp,mesanyo,n_horasex,n_horastot)
+VALUES ('1','1','07-2012','15','150'),
+('2','6','10-2008','0','100'),
+('3','4','09-2015','50','150'),
+('4','9','01-2002','8','150'),
+('5','1','05-2022','0','80'),
+('6','8','02-2010','23','150'),
+('7','1','06-2022','0','80'),
+('8','3','03-2018','10','150'),
+('9','1','06-2020','5','150'),
+('10','3','04-2022','0','80'),
+('11','1','12-2021','40','150'),
+('12','6','12-2000','20','130'),
+('13','1','11-2021','0','150'),
+('14','9','10-2020','25','80');
+
+INSERT INTO pluses(nombre)
+VALUES('Ayuda Especial'),
+('Plus de transporte'),
+('Plus de teletrabajo'),
+('Dieta media'),
+('Diesta completa');
+
+INSERT INTO recibe(id,codtra,mesanyo,valor)
+VALUES('1','1','07-2012','1'),
+('2','1','07-2012','20'),
+('5','1','07-2012','20'),
+('2','2','10-2008','12'),
+('3','3','09-2015','20'),
+('2','6','02-2010','20'),
+('5','6','02-2012','10');
