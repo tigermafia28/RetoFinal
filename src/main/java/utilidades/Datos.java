@@ -4,6 +4,7 @@
  */
 package utilidades;
 
+import java.util.ArrayList;
 import leerXML.clases.Plus;
 import leerXML.enums.Contrato;
 
@@ -12,9 +13,7 @@ import leerXML.enums.Contrato;
  * @author usuario
  */
 public class Datos {
-	public int diaInicio;
-	public int diaFinal;
-	public int nHorasDiarias;
+	public int nHorasTotales;
 	public int nHorasExtra;
 	public float salarioAnual;
 	public int nPagasExtra;
@@ -24,5 +23,5 @@ public class Datos {
 	public float porcentajeAtep;
 	public boolean prorrateado;
 	public Contrato contrato;
-	public PlusCalculado[] pluses;
+	public ArrayList<PlusCalculado> pluses;
 }

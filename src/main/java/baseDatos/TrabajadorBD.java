@@ -7,8 +7,4 @@ public class TrabajadorBD {
 	public String nombre;
 	public String nif;
 	public String nafSS;
-	public String convenio;
-	public String grupo;
-	public String categoria;
-	public Contrato contrato;
 }

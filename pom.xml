@@ -15,6 +15,12 @@
             <groupId>javax.xml.parsers</groupId>
             <artifactId>jaxp-api</artifactId>
             <version>1.4.5</version>
-        </dependency>
+		 <type>jar</type>
+		</dependency>
+		<dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.10</version>
+		</dependency>
 	</dependencies>
 </project>

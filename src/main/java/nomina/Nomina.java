@@ -1,5 +1,6 @@
 package nomina;
 
+import java.util.ArrayList;
 import leerXML.clases.Plus;
 import static leerXML.enums.Contrato.*;
 import static leerXML.enums.Percepcion.*;
@@ -9,10 +10,16 @@ import utilidades.PlusCalculado;
 public class Nomina {
 
 	// Periodo de liquidación y otros datos
+
+	/*
 	public int diaInicio;
 	public int diaFinal;
 	public int totalDias; // totalDias = diaFinal - diaInicio + 1
 	public int nHorasDiarias;
+	*/
+
+	public int nHorasTotales;
+
 	public int nHorasExtra;
 
 	// Datos anuales
@@ -28,9 +35,9 @@ public class Nomina {
 	public float horasExtra; // (Salario bruto anual / número de pagas(12 + extra)) * porcentaje de aumento horas extra
 
 	// Pluses
-	public PlusCalculado[] plusesSalariales;
+	public ArrayList<PlusCalculado> plusesSalariales;
 	public float totalPlusesSalariales;
-	public PlusCalculado[] plusesNoSalariales;
+	public ArrayList<PlusCalculado> plusesNoSalariales;
 	public float totalPlusesNoSalariales;
 
 	public float totalDevengado; // Salario base + pagaExtra + pluses + horas extra

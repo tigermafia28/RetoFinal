@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nominas>
 	<convenios>
-		<convenio nombre="CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE." fecha="2022">
+		<convenio nombre="Oficinas y despachos" fecha="2022">
 			
 			<grupos>
 
@@ -219,7 +219,7 @@
 		</convenio>
 		
 		
-		<convenio nombre="CONVENIO COLECTIVO PROVINCIAL DE OFICINAS Y DESPACHOS DE ALICANTE." fecha="2023">
+		<convenio nombre="Oficinas y despachos" fecha="2023">
 		<grupos>
 
 				<grupo numerogrupo="1">
@@ -437,7 +437,7 @@
 		</convenio>
 		
 		
-				<convenio nombre="CONVENIO COLECTIVO PARA LA INDUSTRIA DEL METAL." fecha="2022">
+				<convenio nombre="Industria del metal" fecha="2022">
 		<grupos>
 
 				<grupo numerogrupo="1">

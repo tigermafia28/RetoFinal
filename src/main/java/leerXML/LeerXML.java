@@ -7,6 +7,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import baseDatos.PlusBD;
+import java.util.HashMap;
 import leerXML.clases.Categoria;
 import leerXML.clases.Convenio;
 import leerXML.clases.Grupo;
@@ -25,12 +26,12 @@ import utilidades.Util;
 
 public class LeerXML {
 	
-    public static Convenio[] getXMLContent(File archivo) {
+    public static HashMap getXMLContent(File archivo) {
 
         // Instantiate the Factory
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		
-		Convenio[] listaConvenios = new Convenio[1024];
+		HashMap<String,Convenio> listaConvenios = new HashMap<>();
 
         try {
 
@@ -55,21 +56,21 @@ public class LeerXML {
 				NodeList nodosHijoConvenio = elementoConvenio.getChildNodes();
 				
 				NodeList grupos = elementoConvenio.getElementsByTagName("grupo");
-				Grupo[] grup = new Grupo[1024];
+				HashMap<String,Grupo> listagrupos = new HashMap<>();
 				
 				for(int indiceGrup = 0; indiceGrup < grupos.getLength(); indiceGrup++){
 					Node nodoGrupo = grupos.item(indiceGrup);
 					Element elementoGrupo = (Element) nodoGrupo;
 					
 					NodeList niveles = elementoGrupo.getElementsByTagName("nivel");
-					Categoria[] cat = new Categoria[1024];
+					HashMap<String,Categoria> listacategorias = new HashMap<>();
 					
 					for(int indiceNiv = 0, indiceNivAux = 0; indiceNiv < niveles.getLength(); indiceNiv++, indiceNivAux++){
 						Node nodoNivel = niveles.item(indiceNiv);
 						Element elementoNivel = (Element) nodoNivel;
 
 						NodeList nodosPlus = elementoNivel.getElementsByTagName("plus");
-						Plus[] pluses = new Plus[1024];
+						HashMap<String,Plus> listapluses = new HashMap<>();
 
 						if(nodosPlus != null){
 							for(int indicePlus = 0; indicePlus < nodosPlus.getLength(); indicePlus++){
@@ -79,11 +80,11 @@ public class LeerXML {
 								Plus plus = new Plus();
 								plus.nombre = elementoPlus.getElementsByTagName("nombre").item(0).getTextContent();
 								plus.cantidad = Float.parseFloat(elementoPlus.getElementsByTagName("cantidad").item(0).getTextContent());
-								plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
+								//plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
 								plus.percepcion = Percepcion.valueOf(elementoPlus.getElementsByTagName("percepcion").item(0).getTextContent().toUpperCase());
-								plus.ambito = ESPECIFICO;
+								//plus.ambito = ESPECIFICO;
 
-								pluses[indicePlus] = plus;
+								listapluses.put(plus.nombre,plus);
 							}
 						}
 
@@ -93,9 +94,9 @@ public class LeerXML {
 							categoria.nivel = elementoNivel.getAttribute("numeronivel");
 							categoria.nombre = elementoNivel.getElementsByTagName("categoria").item(0).getTextContent();
 							categoria.salario = Float.parseFloat(elementoNivel.getElementsByTagName("salario").item(0).getTextContent());
-							categoria.pluses = pluses;
+							categoria.pluses = listapluses;
 
-							cat[indiceNivAux] = categoria;
+							listacategorias.put(categoria.nivel,categoria);
 						}
 						else{
 							int indiceSub;
@@ -104,7 +105,7 @@ public class LeerXML {
 								Element elementoSubnivel = (Element) nodoSubnivel;
 
 								nodosPlus = elementoSubnivel.getElementsByTagName("plus");
-								pluses = new Plus[1024];
+								listapluses = new HashMap<>();
 
 								if(nodosPlus != null){
 									for(int indicePlus = 0; indicePlus < nodosPlus.getLength(); indicePlus++){
@@ -114,12 +115,12 @@ public class LeerXML {
 										Plus plus = new Plus();
 										plus.nombre = elementoPlus.getElementsByTagName("nombre").item(0).getTextContent();
 										plus.cantidad = Float.parseFloat(elementoPlus.getElementsByTagName("cantidad").item(0).getTextContent());
-										plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
+										//plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
 										plus.percepcion = Percepcion.valueOf(elementoPlus.getElementsByTagName("percepcion").item(0).getTextContent().toUpperCase());
-										plus.ambito = ESPECIFICO;
+										//plus.ambito = ESPECIFICO;
 										
 										
-										pluses[indicePlus] = plus;
+										listapluses.put(plus.nombre, plus);
 									}
 								}
 
@@ -127,9 +128,9 @@ public class LeerXML {
 								categoria.nivel = elementoNivel.getAttribute("numeronivel") + elementoSubnivel.getAttribute("letra");
 								categoria.nombre = elementoSubnivel.getElementsByTagName("categoria").item(0).getTextContent();
 								categoria.salario = Float.parseFloat(elementoSubnivel.getElementsByTagName("salario").item(0).getTextContent());
-								categoria.pluses = pluses;
+								categoria.pluses = listapluses;
 
-								cat[indiceNivAux + indiceSub] = categoria;
+								listacategorias.put(categoria.nivel,categoria);
 							}
 							
 							indiceNivAux += indiceSub - 1;
@@ -138,13 +139,13 @@ public class LeerXML {
 					
 					Grupo grupo = new Grupo();
 					grupo.numero = Short.parseShort(elementoGrupo.getAttribute("numerogrupo"));
-					grupo.categorias = cat;
+					grupo.categorias = listacategorias;
 					
-					grup[indiceGrup] = grupo;
+					listagrupos.put(String.valueOf(grupo.numero),grupo);
 				}
 
 				NodeList nodosPlus = null;
-				Plus[] pluses = new Plus[1024];
+				HashMap<String,Plus> listapluses = new HashMap<>();
 
 				for(int indiceNodosHijo = 0; indiceNodosHijo < nodosHijoConvenio.getLength(); indiceNodosHijo++)
 					if(nodosHijoConvenio.item(indiceNodosHijo).getNodeName().equals("pluses"))
@@ -158,25 +159,25 @@ public class LeerXML {
 						Plus plus = new Plus();
 						plus.nombre = elementoPlus.getElementsByTagName("nombre").item(0).getTextContent();
 						plus.cantidad = Float.parseFloat(elementoPlus.getElementsByTagName("cantidad").item(0).getTextContent());
-						plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
+						//plus.retribucion = Retribucion.valueOf(elementoPlus.getElementsByTagName("retribucion").item(0).getTextContent().toUpperCase());
 						plus.percepcion = Percepcion.valueOf(elementoPlus.getElementsByTagName("percepcion").item(0).getTextContent().toUpperCase());
-						plus.ambito = GENERAL;
+						//plus.ambito = GENERAL;
 
-						pluses[indicePlus] = plus;
+						listapluses.put(plus.nombre, plus);
 					}
 				}
 
 				Convenio convenio = new Convenio();
 				convenio.nombre = elementoConvenio.getAttribute("nombre");
 				convenio.fecha = Integer.parseInt(elementoConvenio.getAttribute("fecha"));
-				convenio.grupos = grup;
-				convenio.pluses = pluses;
+				convenio.grupos = listagrupos;
+				convenio.pluses = listapluses;
 				convenio.nPagasExtra = Integer.parseInt(elementoConvenio.getElementsByTagName("pagasextra").item(0).getTextContent());
 				convenio.jornadaAnual = Integer.parseInt(elementoConvenio.getElementsByTagName("jornadaanual").item(0).getTextContent());
 				convenio.porcentajeHorasExtra = Float.parseFloat(elementoConvenio.getElementsByTagName("horasextra").item(0).getTextContent());
 				convenio.porcentajeAtep = Float.parseFloat(elementoConvenio.getElementsByTagName("atep").item(0).getTextContent());
 				
-				listaConvenios[indiceConv] = convenio;
+				listaConvenios.put(convenio.nombre + " " + convenio.fecha, convenio);
 			}
 			
         } catch (ParserConfigurationException | SAXException | IOException e) {
@@ -189,7 +190,7 @@ public class LeerXML {
 	public static void main(String[] args){
 		String nombre = "Nominas.xml";
 		File xml = new File(nombre);
-		Convenio[] convenios = getXMLContent(xml);
+		HashMap<String, Convenio> convenios = getXMLContent(xml);
 		
 		/*
 		for(Convenio conv : convenios){
@@ -238,6 +239,7 @@ public class LeerXML {
 		}
 		*/
 
+		/*
 		PlusBD[] plusesBD = new PlusBD[1024];
 		PlusBD plusBD = new PlusBD();
 		plusBD.nombre = "Plus de transporte";
@@ -250,20 +252,30 @@ public class LeerXML {
 		plusesBD[0] = plusBD;
 		plusesBD[1] = plusBD2;
 
+		*/
+
+
+		Convenio c1 = convenios.get("Industria del metal 2022");
+		Grupo g1 = c1.grupos.get("3");
+		Categoria cat1 = g1.categorias.get("1");
+
 		Datos datos = new Datos();
-		datos.diaInicio = 1; //bd
-		datos.diaFinal = 30; //bd
-		datos.nHorasDiarias = 8; //bd
+		//datos.diaInicio = 1; //bd
+		//datos.diaFinal = 30; //bd
+		//datos.nHorasDiarias = 8; //bd
+		datos.nHorasTotales = 150;
 		datos.nHorasExtra = 0; //bd
-		datos.salarioAnual = convenios[0].grupos[1].categorias[0].salario; //xml, categoria
-		datos.nPagasExtra = convenios[0].nPagasExtra; //xml, convenio
-		datos.jornadaAnual = convenios[0].jornadaAnual; //xml, convenio
+		//datos.salarioAnual = convenios[0].grupos[1].categorias[0].salario; //xml, categoria
+		datos.salarioAnual = cat1.salario;
+		datos.nPagasExtra = c1.nPagasExtra; //xml, convenio
+		datos.jornadaAnual = c1.jornadaAnual; //xml, convenio
 		datos.irpf = 2f; //bd o 12% ?
-		datos.porcentajeHorasExtra = convenios[0].porcentajeHorasExtra; //xml, convenio
-		datos.porcentajeAtep = convenios[0].porcentajeAtep; //xml, convenio
+		datos.porcentajeHorasExtra = c1.porcentajeHorasExtra; //xml, convenio
+		datos.porcentajeAtep = c1.porcentajeAtep; //xml, convenio
 		datos.prorrateado = true; //bd
 		datos.contrato = INDEFINIDO; //bd
-		datos.pluses = Util.calculaPluses(convenios[0].pluses, plusesBD); //bd? + xml
+		//datos.pluses = Util.calculaPluses(c1.pluses, plusesBD); //bd? + xml
+		
 		
 		Nomina nomina = Util.calculaNomina(datos);
 		System.out.println("ole");
